@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Helper</title>
+</head>
+<body>
+    
+<label class="form-label font-monospace fw-bold">Choose a Helper </label>
+<select class="form-select" id="myPickTwo" onChange="mypickTwofu()">
+  <option value="" title="Select an option">None</option>
+  
+  <!-- Common Terms Used Worldwide -->
+  <optgroup label="Common Terms">
+    <option value="app" title="Application">app</option>
+    <option value="web" title="Website">web</option>
+    <option value="tv" title="Television">tv</option>
+    <option value="url" title="Uniform Resource Locator">url</option>
+    <option value="pdf" title="Portable Document Format">pdf</option>
+    <option value="mp3" title="MPEG Audio Layer 3">mp3</option>
+    <option value="mp4" title="MPEG-4 Video">mp4</option>
+    <option value="jpg" title="JPEG Image">jpg</option>
+    <option value="vid" title="Video">vid</option>
+    <option value="txt" title="Text">txt</option>
+    <option value="doc" title="Document">doc</option>
+    <option value="info" title="Information">info</option>
+    <option value="msg" title="Message">msg</option>
+    <option value="img" title="Image">img</option>
+    <option value="exe" title="Executable File">exe</option>
+    <option value="png" title="Portable Network Graphics">png</option>
+    <option value="gif" title="Graphics Interchange Format">gif</option>
+    <option value="zip" title="Compressed Archive">zip</option>
+    <option value="rar" title="WinRAR Archive">rar</option>
+    <option value="iso" title="Disk Image File">iso</option>
+    <option value="sdk" title="Software Development Kit">sdk</option>
+    <option value="os" title="Operating System">os</option>
+    <option value="cpu" title="Central Processing Unit">cpu</option>
+    <option value="ram" title="Random Access Memory">ram</option>
+    <option value="gpu" title="Graphics Processing Unit">gpu</option>
+    <option value="db" title="Database">db</option>
+    <option value="api" title="Application Programming Interface">api</option>
+    <option value="wifi" title="Wireless Fidelity">wifi</option>
+    <option value="bluetooth" title="Bluetooth Technology">bluetooth</option>
+    <option value="vr" title="Virtual Reality">vr</option>
+    <option value="ar" title="Augmented Reality">ar</option>
+    <option value="ai" title="Artificial Intelligence">ai</option>
+    <option value="ml" title="Machine Learning">ml</option>
+    <option value="ip" title="Internet Protocol">ip</option>
+    <option value="vpn" title="Virtual Private Network">vpn</option>
+    <option value="sms" title="Short Message Service">sms</option>
+    <option value="mms" title="Multimedia Messaging Service">mms</option>
+    <option value="rss" title="Really Simple Syndication">rss</option>
+    <option value="seo" title="Search Engine Optimization">seo</option>
+    <option value="ux" title="User Experience">ux</option>
+    <option value="ui" title="User Interface">ui</option>
+    <option value="html" title="HyperText Markup Language">html</option>
+    <option value="css" title="Cascading Style Sheets">css</option>
+    <option value="js" title="JavaScript">js</option>
+    <option value="sql" title="Structured Query Language">sql</option>
+    <option value="xml" title="Extensible Markup Language">xml</option>
+    <option value="json" title="JavaScript Object Notation">json</option>
+    <option value="csv" title="Comma-Separated Values">csv</option>
+    <option value="cloud" title="Cloud Computing">cloud</option>
+  </optgroup>
+<!-- Educational Terms Used Worldwide -->
+<optgroup label="Educational Terms">
+  <option value="school" title="School">school</option>
+  <option value="college" title="College">college</option>
+  <option value="university" title="University">university</option>
+  <option value="tutorial" title="Tutorial">tutorial</option>
+  <option value="course" title="Online Course">course</option>
+  <option value="tutor" title="Live Tutor">tutor</option>
+  <option value="study" title="Study Materials">study</option>
+  <option value="lecture" title="Lecture">lecture</option>
+  <option value="exam" title="Exam Preparation">exam</option>
+</optgroup>
+<!-- Locations and Spaces -->
+<optgroup label="Locations and Spaces">
+  <option value="gallery" title="Art display space">gallery</option>
+  <option value="galleries" title="Multiple art spaces">galleries</option>
+  <option value="studio" title="Creative workspace">studio</option>
+  <option value="studios" title="Multiple creative spaces">studios</option>
+  <option value="hut" title="Small shelter">hut</option>
+  <option value="town" title="Small urban area">town</option>
+  <option value="village" title="Small rural settlement">village</option>
+  <option value="city" title="Large urban area">city</option>
+  <option value="neighborhood" title="Residential area">neighborhood</option>
+  <option value="district" title="Area with defined boundaries">district</option>
+  <option value="barrio" title="Spanish-speaking neighborhood">barrio</option>
+  <option value="suburb" title="Residential area outside city">suburb</option>
+  <option value="township" title="Small administrative area">township</option>
+  <option value="precinct" title="Defined area or district">precinct</option>
+  <option value="meadow" title="Grassland area">meadow</option>
+  <option value="park" title="Public outdoor space">park</option>
+  <option value="plaza" title="Open public square">plaza</option>
+  <option value="square" title="Open public space">square</option>
+  <option value="alley" title="Narrow passageway">alley</option>
+  <option value="street" title="Public road in a city">street</option>
+  <option value="lane" title="Narrow road or path">lane</option>
+  <option value="avenue" title="Wide road, often tree-lined">avenue</option>
+  <option value="boulevard" title="Wide, landscaped street">boulevard</option>
+  <option value="pavilion" title="Large building for events">pavilion</option>
+  <option value="compound" title="Fenced area with multiple buildings">compound</option>
+  <option value="residence" title="Place of living">residence</option>
+  <option value="manor" title="Large house with land">manor</option>
+  <option value="estate" title="Large property with a house">estate</option>
+  <option value="farm" title="Land used for agriculture">farm</option>
+  <option value="cottage" title="Small, rural house">cottage</option>
+  <option value="house" title="Place of living">house</option>
+  <option value="mansion" title="Large, luxurious house">mansion</option>
+  <option value="castle" title="Large fortified residence">castle</option>
+  <option value="loft" title="Open space, often industrial">loft</option>
+  <option value="warehouse" title="Building for storing goods">warehouse</option>
+  <option value="workshop" title="Place for making things">workshop</option>
+  <option value="salon" title="Gathering place for social events">salon</option>
+  <option value="boutique" title="Small, specialized store">boutique</option>
+</optgroup>
+<!-- Shopping, Cart, Buy, Sell, Broker, Middlemen, E-commerce -->
+<optgroup label="Shopping & E-commerce">
+  <option value="shopping" title="Shopping">shopping</option>
+  <option value="cart" title="Shopping Cart">cart</option>
+  <option value="buy" title="Buy Product">buy</option>
+  <option value="sell" title="Sell Product">sell</option>
+  <option value="broker" title="Broker">broker</option>
+  <option value="middlemen" title="Middlemen">middlemen</option>
+  <option value="ecommerce" title="E-commerce">ecommerce</option>
+  <option value="auction" title="Auction">auction</option>
+  <option value="deal" title="Deal">deal</option>
+  <option value="marketplace" title="Online Marketplace">marketplace</option>
+  <option value="checkout" title="Checkout Process">checkout</option>
+  <option value="payment" title="Payment Method">payment</option>
+  <option value="discount" title="Discount Offers">discount</option>
+  <option value="coupon" title="Coupon Code">coupon</option>
+  <option value="product" title="Product Listings">product</option>
+  <option value="shopping-cart" title="Shopping Cart">shopping-cart</option>
+  <option value="store" title="Online Store">store</option>
+  <option value="shipping" title="Shipping Method">shipping</option>
+  <option value="order" title="Order Management">order</option>
+  <option value="inventory" title="Product Inventory">inventory</option>
+  <option value="customer" title="Customer Service">customer</option>
+  <option value="returns" title="Return/Refund Process">returns</option>
+  <option value="wishlist" title="Wishlist">wishlist</option>
+  <option value="subscription" title="Subscription Model">subscription</option>
+</optgroup>
+
+
+  <!-- Suffixes -->
+  <optgroup label="Suffixes">
+    <option value="able" title="Able to do or capable of">able</option>
+    <option value="ous" title="Full of, possessing the qualities of">ous</option>
+    <option value="ic" title="Pertaining to or related to">ic</option>
+    <option value="al" title="Pertaining to or related to">al</option>
+    <option value="ive" title="Having the nature of, relating to">ive</option>
+    <option value="ly" title="In the manner of, or characteristic of">ly</option>
+    <option value="less" title="Without, lacking">less</option>
+    <option value="ful" title="Full of, having the qualities of">ful</option>
+    <option value="ment" title="State or result of an action or process">ment</option>
+    <option value="ing" title="Denoting an ongoing action or process">ing</option>
+    <option value="ize" title="To make or become">ize</option>
+    <option value="ify" title="To make or become">ify</option>
+    <option value="ate" title="To cause or make something happen">ate</option>
+    <option value="ation" title="Action or process of">ation</option>
+    <option value="er" title="A person or thing that performs an action">er</option>
+    <option value="or" title="A person or thing that does something">or</option>
+    <option value="ist" title="A person who practices or is concerned with something">ist</option>
+    <option value="phile" title="Lover or enthusiast of something">phile</option>
+    <option value="ee" title="One who receives an action or is affected by something">ee</option>
+    <option value="ness" title="State or quality of being">ness</option>
+    <option value="ship" title="State or condition, relationship">ship</option>
+    <option value="hood" title="State, condition, or quality of being">hood</option>
+    <option value="dom" title="State or condition">dom</option>
+    <option value="ary" title="Pertaining to, connected with">ary</option>
+    <option value="age" title="Action, result, or process of an action">age</option>
+    <option value="ant" title="Having the qualities of">ant</option>
+    <option value="ent" title="Having the qualities of, state of being">ent</option>
+  </optgroup>
+
+  <!-- Miscellaneous -->
+  <optgroup label="Miscellaneous">
+    <option value="bloom" title="To thrive or flourish">bloom</option>
+    <option value="boom" title="A sudden increase or growth">boom</option>
+    <option value="gloom" title="A state of darkness or depression">gloom</option>
+    <option value="zoom" title="To move quickly or increase rapidly">zoom</option>
+    <option value="doom" title="A sense of inevitable destruction or failure">doom</option>
+    <option value="room" title="Space or area for something">room</option>
+    <option value="fume" title="Vapor or gas, often with an unpleasant smell">fume</option>
+    <option value="vroom" title="The sound of an engine revving, associated with speed">vroom</option>
+    <option value="blooming" title="In the process of blooming or flourishing">blooming</option>
+    <option value="booming" title="Expanding or growing rapidly, especially in business or economy">booming</option>
+    <option value="gloomy" title="Indicating or expressing sadness or pessimism">gloomy</option>
+    <option value="zooming" title="Moving quickly or intensifying rapidly">zooming</option>
+    <option value="logy" title="Study or science of">logy</option>
+    <option value="phobia" title="Fear of or aversion to something">phobia</option>
+    <option value="graphy" title="Process or method of recording or writing">graphy</option>
+    <option value="scope" title="Instrument for viewing or observing">scope</option>
+    <option value="ology" title="The study or science of">ology</option>
+  </optgroup>
+
+  <!-- Units of Measurement -->
+  <optgroup label="Units of Measurement">
+    <option value="cm" title="Centimeter">cm</option>
+    <option value="km" title="Kilometer">km</option>
+    <option value="hr" title="Hour">hr</option>
+    <option value="min" title="Minute">min</option>
+    <option value="sec" title="Second">sec</option>
+    <option value="mon" title="Month">mon</option>
+    <option value="yr" title="Year">yr</option>
+  </optgroup>
+
+  <!-- Days of the Week -->
+  <optgroup label="Days of the Week">
+    <option value="sun" title="Sunday">sun</option>
+    <option value="mon" title="Monday">mon</option>
+    <option value="tue" title="Tuesday">tue</option>
+    <option value="wed" title="Wednesday">wed</option>
+    <option value="thu" title="Thursday">thu</option>
+    <option value="fri" title="Friday">fri</option>
+    <option value="sat" title="Saturday">sat</option>
+  </optgroup>
+
+  <!-- Months of the Year -->
+  <optgroup label="Months of the Year">
+    <option value="jan" title="January">jan</option>
+    <option value="feb" title="February">feb</option>
+    <option value="mar" title="March">mar</option>
+    <option value="apr" title="April">apr</option>
+    <option value="may" title="May">may</option>
+    <option value="jun" title="June">jun</option>
+    <option value="jul" title="July">jul</option>
+    <option value="aug" title="August">aug</option>
+    <option value="sep" title="September">sep</option>
+    <option value="oct" title="October">oct</option>
+    <option value="nov" title="November">nov</option>
+    <option value="dec" title="December">dec</option>
+  </optgroup>
+
+  <!-- Miscellaneous Common Words -->
+  <optgroup label="Miscellaneous Common Words">
+    <option value="and" title="And">and</option>
+    <option value="or" title="Or">or</option>
+    <option value="the" title="The">the</option>
+    <option value="to" title="To">to</option>
+    <option value="for" title="For">for</option>
+    <option value="of" title="Of">of</option>
+    <option value="in" title="In">in</option>
+    <option value="on" title="On">on</option>
+    <option value="at" title="At">at</option>
+    <option value="by" title="By">by</option>
+    <option value="up" title="Up">up</option>
+    <option value="down" title="Down">down</option>
+    <option value="out" title="Out">out</option>
+    <option value="off" title="Off">off</option>
+    <option value="now" title="Now">now</option>
+    <option value="new" title="New">new</option>
+    <option value="old" title="Old">old</option>
+    <option value="top" title="Top">top</option>
+    <option value="low" title="Low">low</option>
+    <option value="big" title="Big">big</option>
+    <option value="small" title="Small">small</option>
+    <option value="fast" title="Fast">fast</option>
+    <option value="slow" title="Slow">slow</option>
+    <option value="high" title="High">high</option>
+    <option value="short" title="Short">short</option>
+    <option value="long" title="Long">long</option>
+  </optgroup>
+</select>
+</body>
+</html>

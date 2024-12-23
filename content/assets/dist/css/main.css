@@ -1,0 +1,1102 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
+
+@font-face {
+  font-family: Pacifico;
+  src: url(../../brand/Pacifico-Regular.ttf);
+}
+
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  color: black;
+}
+.text-container {
+  font-size: 40px;
+  text-align: center;
+}
+.card-body {
+  background-color: #ffffff;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  color: #424242;
+}
+
+.list-group-item .icon {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.form-select {
+  padding: 2px;
+}
+
+#myClipboard {
+  padding: 2px;
+}
+
+.card {
+  border: none !important;
+}
+
+/* clear icon */
+.input-container {
+  position: relative;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.clear-icon:hover {
+  color: #888;
+}
+
+/* Blinking cursor */
+.cursor {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Simple loader styling */
+#loading-spinner {
+  text-align: center;
+  padding: 50px;
+  font-size: 20px;
+  display: block;
+}
+
+#dns-output-container {
+  display: none;
+  /* Hide the container initially */
+}
+
+.accordion-button {
+  color: #00008B;
+  font-size: 1.5rem;
+}
+.navbar-brand{
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 1.5rem;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.navbar-text {
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+/* Highlight the active item */
+.active-item {
+  background-color: #d4edda;
+  /* Light green background, change as needed */
+  border-color: #c3e6cb;
+  /* Green border, adjust as required */
+  color: #155724;
+  /* Dark green text color for contrast */
+}
+
+/* Ensure the link color is appropriate */
+.active-item a {
+  color: #155724;
+  /* Dark green link color to match the text */
+  text-decoration: none;
+  /* Remove underline if desired */
+}
+
+/* tour */
+.modal {
+  z-index: 1050;
+  /* Default Bootstrap modal z-index */
+}
+
+.tour-element {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  position: relative;
+  display: inline-block;
+}
+
+.indicator {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: -10px;
+  /* Center the arrow */
+}
+
+.indicator.bottom {
+  border-top: 10px solid #007bff;
+  /* Color of the arrow */
+  top: -10px;
+  /* Position above the modal */
+}
+
+.indicator.top {
+  border-bottom: 10px solid #007bff;
+  /* Color of the arrow */
+  bottom: -10px;
+  /* Position below the modal */
+}
+
+.indicator.left {
+  border-right: 10px solid #007bff;
+  /* Color of the arrow */
+  left: -10px;
+  /* Position to the left of the modal */
+}
+
+.indicator.right {
+  border-left: 10px solid #007bff;
+  /* Color of the arrow */
+  right: -10px;
+  /* Position to the right of the modal */
+}
+
+/* tour */
+
+
+/* Optionally adjust the icon color if needed */
+.active-item img {
+  filter: none;
+  /* Remove or adjust filter as needed */
+}
+
+/* caret */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* clumple main title */
+.clumple-logo {
+  font-family: Pacifico;
+  font-size: 30px;
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+.brand-le {
+  -webkit-animation: colorchange 20s infinite alternate;
+  animation: colorchange 20s infinite alternate;
+}
+
+.btn {
+  text-align: center !important;
+}
+
+/* download text */
+
+.select2-container {
+  width: 100% !important;
+}
+select option {
+  height: 30px; /* Fixed height for each option */
+  line-height: 30px; /* Center the text vertically within each option */
+}
+
+.oig-mt-6 {
+  margin-top: 5rem !important;
+}
+.mt-8{
+  margin-top: 8% !important;
+}
+.mt-12{
+  margin-top: 12% !important;
+}
+
+.inline {
+
+  display: inline;
+  margin-right: 0;
+  /* Adjust margin as needed */
+
+}
+
+#text {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #021652;
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  resize: none;
+  margin-bottom: 35px;
+  height: 75px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#filename {
+  width: calc(100% - 200px);
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #052a53;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+#download {
+  font-size: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  width: 174px;
+  cursor: pointer;
+}
+
+/* download text */
+
+@keyframes colorchange {
+  0% {
+
+    color: #607D8B;
+  }
+
+  10% {
+
+    color: #FF7043;
+  }
+
+  20% {
+
+    color: #8D6E63;
+  }
+
+  30% {
+
+    color: #FBC02D;
+  }
+
+  40% {
+
+    color: #4CAF50;
+  }
+
+  50% {
+
+    color: #009688;
+  }
+
+  60% {
+
+    color: #03A9F4;
+  }
+
+  70% {
+
+    color: #673AB7;
+  }
+
+  80% {
+
+    color: #8E24AA;
+  }
+
+  90% {
+
+    color: #D81B60;
+  }
+
+  100% {
+
+    color: #0a0909;
+  }
+}
+
+.navbar-toggler {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 12pt !important;
+  font-weight: bold;
+}
+
+/* clumple main title */
+/* category title */
+.titleCategory {
+  font-size: 18px;
+}
+
+/* icons */
+.styleIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.styleIconTiny {
+  width: 15px;
+  height: 15px;
+}
+
+/* listgroup */
+/* listgroup yscroll */
+.list-group-yScroll {
+  overflow-y: scroll;
+  height: 475px;
+}
+
+/* domain categories sidebar */
+/* my10 */
+.my-10 {
+  margin-top: 10px;
+}
+
+/* domainCategoriesSearchInput */
+.domainCategoriesSearchInput {
+  padding: 20px;
+}
+
+/* cipboardCopyInput */
+.cipboardCopyInput {
+  border: none;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
+}
+
+.cipboardCopyInput :focus-visible {
+  border: none;
+}
+
+/* .btn-outline-light */
+.btn-outline-light {
+  color: #ffffff;
+}
+
+h4 {
+  color: #000000;
+}
+
+.sidebar {
+  height: 610px;
+  width: 0;
+  position: absolute;
+  z-index: 2;
+  top: 550;
+  left: 550;
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  margin-top: 81px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #212121;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #198754;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 16px;
+  margin-left: 0px !important;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+
+}
+
+/* domain categories sidebar */
+.display-4{
+  font-size: 1.5rem;
+}
+
+.blog-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h6 {
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  font-size: 2.5rem;
+}
+
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+.row {
+  display: flex;
+}
+
+.btn-red {
+  background-color: #FFEBEE;
+  border: none;
+}
+
+.btn-red:hover {
+  background-color: #FFCDD2;
+}
+
+.btn-light {
+  background-color: #ECEFF1;
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: #CFD8DC;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  /* Wrap keys to the next line */
+  justify-content: center;
+  /* Center keys */
+  max-width: 100%;
+  /* Ensure it doesn't exceed the viewport */
+  margin: 10px auto;
+  /* Center the keyboard */
+}
+
+.muteButton {
+  background-color: #ECEFF1 !important;
+}
+
+.muteButton:hover {
+  background-color: #CFD8DC !important;
+}
+
+.hyphen {
+  background-color: #ECEFF1 !important;
+}
+
+.hyphen:hover {
+  background-color: #CFD8DC !important;
+}
+
+.keyBack {
+  background-color: #ECEFF1 !important;
+}
+
+.keyBack:hover {
+  background-color: #CFD8DC !important;
+}
+
+.key {
+  flex: 0 0 10%;
+  /* Adjust this for responsive sizing */
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0px;
+  /* Add margin for spacing */
+}
+
+/* Highlighted key when a physical key is pressed */
+.key.highlight {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  /* Change the color to highlight */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.key.highlight:hover {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  /* Change the color to highlight */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.key:hover {
+  background-color: #CFD8DC;
+}
+
+.key:active {
+  background-color: #e9ecef;
+}
+
+.key.space {
+  flex: 0 0 10%;
+  /* Space key takes more space */
+}
+
+#output-container {
+  margin-top: 20px;
+}
+
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.list-group {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.list-group-item .icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.list-group-item[data-icon-default="default"] .icon {
+  background-image: url('../../brand/disabled-check_circle.svg');
+}
+
+.list-group-item[data-icon-hover="hover"]:hover .icon {
+  background-image: url('../../brand/enabled-check_circle.svg');
+}
+
+.list-group-item[data-icon-active="active"]:active .icon {
+  background-image: url('../../brand/enabled-check_circle.svg');
+}
+
+.list-group-item[data-icon-focus="focus"]:focus .icon {
+  background-image: url('../../brand/enabled-check_circle.svg');
+}
+
+/* flash card */
+.flip-card {
+  height: 300px;
+  perspective: 1000px;
+  /* Adds depth to the scene */
+  text-align: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  /* Flip effect */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* Ensures the back doesn't show when flipped */
+}
+
+.flip-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+}
+
+.flip-card-back {
+  position: relative;
+  /* Needed to position the link relative to the back */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  transform: rotateY(180deg);
+  /* Ensures the back side is flipped */
+}
+
+.how-to-name-link {
+  position: absolute;
+  bottom: 10px;
+  /* Adjust this value for vertical position */
+  right: 10px;
+  /* Adjust this value for horizontal position */
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.how-to-name-link:hover {
+  text-decoration: underline;
+}
+
+
+/* flash card */
+
+
+/* media queries */
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+
+  .offcanvas-header input.form-control {
+    font-size: 0.875rem;
+  }
+
+  .list-group-item {
+    font-size: 1.875rem;
+  }
+  .display-4{
+    font-size: 1.5rem;
+  }
+  .text-container {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .navbar-text{
+    font-size: 18px !important;
+  }
+  .mobH {
+    display: none;
+  }
+
+  .mobHt0 {
+    margin-top: 0px !important;
+  }
+
+  #keyMob {
+    padding: 5px;
+  }
+
+  .accordion .btn {
+    width: 100%;
+  }
+
+  #backspace {
+    width: 100%;
+  }
+
+  #detruncate {
+    white-space: nowrap;
+    /* Prevents the text from wrapping */
+    overflow: hidden;
+    /* Hides the overflow text */
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  .footcenter {
+    justify-content: center !important;
+  }
+
+  .oig-mt-6 {
+    margin-top: 5rem !important;
+  }
+
+  .NBmt {
+    margin: 0px;
+  }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 1.75rem;
+  }
+
+
+  .navbar-toggler {
+    font-size: 1.25rem;
+  }
+
+  .offcanvas-header input.form-control {
+    font-size: 1rem;
+  }
+
+  .list-group-item {
+    font-size: 1rem;
+  }
+
+
+
+
+
+}
+
+/* 768 */
+@media (max-width: 768px) {
+
+
+  .form-select {
+    padding: 2px;
+  }
+
+  #myClipboard {
+    padding: 2px;
+  }
+
+  #backspace {
+    width: 100%;
+  }
+
+  .event {
+    width: 100%;
+  }
+
+  .h4headtruncate {
+    width: 100%;
+    white-space: nowrap;
+    /* Prevents the text from wrapping */
+    overflow: hidden;
+    /* Hides the overflow text */
+    text-overflow: ellipsis;
+    width: 85%;
+  }
+
+  .event .btn-red {
+    width: 80%;
+    padding: 2px;
+    margin: 0;
+    float: right;
+  }
+
+  .card-body .fs-3 {
+    font-size: 14pt !important;
+  }
+
+
+
+  .accordion .btn {
+    width: 100%;
+  }
+
+  /* listgroup yscroll */
+  .list-group-yScroll {
+    overflow-y: scroll;
+    height: 600px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 2rem;
+  }
+
+
+
+  .navbar-toggler {
+    font-size: 1.5rem;
+  }
+
+  .offcanvas-header input.form-control {
+    font-size: 1.125rem;
+  }
+
+  .list-group-item {
+    font-size: 1.125rem;
+  }
+
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+  .display-4 {
+    font-size: 3rem;
+  }
+
+  .h-md-250 {
+    height: 250px;
+  }
+
+  .form-select {
+    padding: 2px;
+  }
+
+  #myClipboard {
+    padding: 2px;
+  }
+
+  .event {
+    width: 45%;
+  }
+
+  .event .btn-red {
+    width: 100%;
+    padding: 2px;
+    margin: 0;
+    float: right;
+
+  }
+
+  #backspace {
+    width: 100%;
+  }
+
+  .oig-mt-6 {
+    margin-top: 5rem !important;
+  }
+
+  .accordion .btn {
+    width: 100%;
+  }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 2.25rem;
+  }
+
+
+
+  .navbar-toggler {
+    font-size: 1.75rem;
+  }
+
+  .offcanvas-header input.form-control {
+    font-size: 1.25rem;
+  }
+
+  .list-group-item {
+    font-size: 1.25rem;
+  }
+
+
+  .mobHDSKTP {
+    display: none;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 0.5rem 4rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 2.5rem;
+  }
+
+
+
+  .navbar-toggler {
+    font-size: 2rem;
+  }
+
+  .offcanvas-header input.form-control {
+    font-size: 1.375rem;
+  }
+
+  .list-group-item {
+    font-size: 1.375rem;
+  }
+
+
+  .mobHDSKTP {
+    display: none;
+  }
+
+}
+
+/* wordpress */
+:root :where(.wp-element-button, .wp-block-button__link) {
+  background-color: #00008B !important;
+}

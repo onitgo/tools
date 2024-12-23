@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Toggle Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .letter {
+            font-size: 200px;  /* Large text size */
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer; /* Pointer cursor on hover */
+            color: #333;
+            position: relative; /* Positioning for the cross icon */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .letter:hover {
+            color: red; /* Change color to red on hover */
+        }
+
+        .letter:hover::after {
+            content: "×"; /* Add a cross icon on hover */
+            position: absolute;
+            top: -20px; /* Position the cross above the letter */
+            right: -20px;
+            font-size: 40px;  /* Cross size */
+            color: red;  /* Cross color */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cat-container">
+        <!-- Display individual clickable letters -->
+        <span id="cat-letter1" class="letter" onclick="toggleLetters(1)">c</span>
+        <span id="cat-letter2" class="letter" onclick="toggleLetters(2)">a</span>
+        <span id="cat-letter3" class="letter" onclick="toggleLetters(3)">t</span>
+    </div>
+
+    <button onclick="copyToClipboard()">Copy to Clipboard</button>
+
+    <script>
+        // Toggle visibility of letters
+        function toggleLetters(clickedLetterIndex) {
+            var letter1 = document.getElementById("cat-letter1");
+            var letter2 = document.getElementById("cat-letter2");
+            var letter3 = document.getElementById("cat-letter3");
+
+            // Show the corresponding letters based on the clicked one
+            if (clickedLetterIndex === 1) {
+                letter1.style.display = 'none'; // Hide 'c'
+                letter2.style.display = 'inline-block'; // Show 'a'
+                letter3.style.display = 'inline-block'; // Show 't'
+            } else if (clickedLetterIndex === 2) {
+                letter2.style.display = 'none'; // Hide 'a'
+                letter1.style.display = 'inline-block'; // Show 'c'
+                letter3.style.display = 'inline-block'; // Show 't'
+            } else if (clickedLetterIndex === 3) {
+                letter3.style.display = 'none'; // Hide 't'
+                letter1.style.display = 'inline-block'; // Show 'c'
+                letter2.style.display = 'inline-block'; // Show 'a'
+            }
+        }
+
+        // Copy the remaining visible text to clipboard
+        function copyToClipboard() {
+            var visibleText = '';
+
+            // Collect the visible text (letters that are displayed)
+            if (document.getElementById("cat-letter1").style.display !== 'none') {
+                visibleText += document.getElementById("cat-letter1").textContent;
+            }
+            if (document.getElementById("cat-letter2").style.display !== 'none') {
+                visibleText += document.getElementById("cat-letter2").textContent;
+            }
+            if (document.getElementById("cat-letter3").style.display !== 'none') {
+                visibleText += document.getElementById("cat-letter3").textContent;
+            }
+
+            // Use the Clipboard API to copy the text
+            navigator.clipboard.writeText(visibleText)
+                .then(function() {
+                    alert("Copied to clipboard: " + visibleText);
+                })
+                .catch(function(err) {
+                    alert("Error copying text: " + err);
+                });
+        }
+    </script>
+
+</body>
+</html>
