@@ -531,5 +531,15 @@ document.addEventListener("DOMContentLoaded", function() {
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-
+function toggleWWW() {
+    var wwwPrefix = document.getElementById('www-prefix');
+    
+    // Toggle visibility of 'www.' based on checkbox state
+    if (document.getElementById('toggleWWW').checked) {
+      wwwPrefix.style.display = 'inline';  // Show 'www.'
+    } else {
+      wwwPrefix.style.display = 'none';    // Hide 'www.'
+    }
+  }
+  
     

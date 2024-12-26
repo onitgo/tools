@@ -39,9 +39,6 @@ p {
   padding: 2px;
 }
 
-#myClipboard {
-  padding: 2px;
-}
 
 
 /* clear icon */
@@ -832,9 +829,6 @@ h6 {
     font-size: 22px;
     margin-top: 20px;
   }
-  .navbar-text{
-    font-size: 18px !important;
-  }
   .mobH {
     display: none;
   }
@@ -914,9 +908,7 @@ h6 {
     padding: 2px;
   }
 
-  #myClipboard {
-    padding: 2px;
-  }
+
 
   #backspace {
     width: 100%;
@@ -1002,9 +994,7 @@ h6 {
     padding: 2px;
   }
 
-  #myClipboard {
-    padding: 2px;
-  }
+ 
 
   .event {
     width: 45%;

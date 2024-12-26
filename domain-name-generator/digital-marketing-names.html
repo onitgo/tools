@@ -90,9 +90,13 @@
             <img src="./assets/brand/Logo.png" title="onitgo Logo" class="me-1" alt="onitgo Logo"><span
                 class="mobH">onitgo</span>
           </a>
-          <div class="navbar-text text-white fs-4">
-            <span>Domain<span class="brand-le"> name</span> generator</span>
-          </div>
+          <span class="navbar-text text-white fs-4">
+            <!-- Visible on small screens (mobile) only -->
+            <span class="d-block d-sm-none">Create <span class="brand-le">Names</span></span>
+          
+            <!-- Visible on medium and larger screens (tablet, desktop, etc.) -->
+            <span class="d-none d-sm-block">Create <span class="brand-le">Names</span> for Websites, Web & Mobile Apps</span>
+          </span>
           <div class="nav justify-content-end">
             
             <button class="navbar-toggler position-relative btn-outline-primary me-1" type="button"
@@ -501,7 +505,7 @@
       </div>
       <div class="col-md-7 col-lg-8 mobHt0">
         <h1 class="fs-5 mb-3"> Create Unique Digital Marketing Domain Names <a href="#nextStep"
-            title="Create Unique Digital Marketing Domain Names" class="btn btn-outline-dark btn-sm" role="button">Learn More</a></h1><div class="card text-bg-light border-0">
+            title="Create Unique Digital Marketing Domain Names">View example</a></h1><div class="card text-bg-light border-0">
 
           <!-- loading spinner while DNS is being loaded -->
           <div id="loading-spinner">
@@ -521,24 +525,199 @@
             <label id="exampleFormControlInput1" class="form-label font-monospace fw-bold">Choose a Short Name</label>
             <select class="form-select" id="myPickOne" onChange="mypickOnefu()">
               <option value="" title="None">None</option>
-              <!--digital marketing Prefixes  -->
-              <option value="digital" title="Pertaining to technology, online platforms, and digital media.">Digital
-              </option>
-              <option value="social" title="Related to social media platforms and interactions.">Social
-              </option>
-              <option value="content" title="Referring to information and media created for online consumption.">Content
-              </option>
-              <option value="email" title="Related to marketing strategies that use email communication.">
-                Email</option>
-              <option value="search" title="Pertaining to search engines and optimization strategies.">
-                Search</option>
-              <option value="mobile" title="Related to marketing strategies targeted at mobile device users.">Mobile
-              </option>
-              <option value="inbound" title="Referring to attracting customers through valuable content.">
-                Inbound</option>
-              <option value="outbound"
-                title="Pertaining to traditional marketing methods that push messages to consumers.">
-                Outbound</option>
+             <!-- Digital Marketing Terms -->
+<!-- Digital Marketing Terms -->
+<optgroup label="Digital Marketing Terms">
+  <option value="seo" title="Improving site visibility on search engines.">SEO</option>
+  <option value="ppc" title="Paid ads for online visibility.">PPC</option>
+  <option value="cpc" title="Cost per ad click.">CPC</option>
+  <option value="ctr" title="Click rate on ads.">CTR</option>
+  <option value="roi" title="Return on marketing investment.">ROI</option>
+  <option value="kpi" title="Metrics to track success.">KPI</option>
+  <option value="cta" title="Call to action for user engagement.">CTA</option>
+  <option value="smm" title="Using social media for promotion.">SMM</option>
+  <option value="crm" title="Managing customer relationships.">CRM</option>
+  <option value="ux" title="User experience design.">UX</option>
+  <option value="a/btest" title="Comparing two versions for better results.">A/B Test</option>
+  <option value="emailmarketing" title="Using emails for engagement.">Email Marketing</option>
+  <option value="landingpage" title="Page designed for user action.">Landing Page</option>
+</optgroup>
+<!-- SEO Terms -->
+<optgroup label="SEO Terms">
+  <option value="keyword" title="Words or phrases searched online.">Keyword</option>
+  <option value="meta" title="HTML tags with page info.">Meta</option>
+  <option value="backlink" title="Link from another site.">Backlink</option>
+  <option value="alttext" title="Text describing an image.">Alt Text</option>
+  <option value="serp" title="Search engine results page.">SERP</option>
+  <option value="organic" title="Non-paid search results.">Organic</option>
+  <option value="crawl" title="Search engines scan websites.">Crawl</option>
+  <option value="index" title="Database of web pages.">Index</option>
+  <option value="anchortext" title="Clickable link text.">Anchor Text</option>
+  <option value="domainauthority" title="Website strength in search rankings.">Domain Authority</option>
+  <option value="nofollow" title="Link telling search engines not to follow.">Nofollow</option>
+  <option value="keyworddensity" title="Frequency of keyword on a page.">Keyword Density</option>
+  <option value="onpage" title="SEO strategies applied directly on-site.">On-Page</option>
+  <option value="offpage" title="SEO strategies outside the site, like backlinks.">Off-Page</option>
+</optgroup>
+<!-- PPC Terms -->
+<optgroup label="PPC Terms">
+  <option value="cpc" title="Cost per click on ads.">CPC</option>
+  <option value="ctr" title="Percentage of clicks on an ad.">CTR</option>
+  <option value="roi" title="Profit from ad spend.">ROI</option>
+  <option value="cpa" title="Cost per conversion.">CPA</option>
+  <option value="cpm" title="Cost per thousand ad views.">CPM</option>
+  <option value="adrank" title="Position of an ad in results.">Ad Rank</option>
+  <option value="qualityscore" title="Google's rating of ad relevance.">Quality Score</option>
+  <option value="bid" title="Amount offered for a click.">Bid</option>
+  <option value="impression" title="Ad displayed to a user.">Impression</option>
+  <option value="conversion" title="User action after clicking an ad.">Conversion</option>
+  <option value="landingpage" title="Page users land on after clicking an ad.">Landing Page</option>
+  <option value="remarketing" title="Targeting past ad interactors.">Remarketing</option>
+  <option value="adextensions" title="Additional info with ads (e.g., phone).">Ad Extensions</option>
+  <option value="negativekeyword" title="Keyword blocking irrelevant ads.">Negative Keyword</option>
+</optgroup>
+<!-- Content Marketing Terms -->
+<optgroup label="Content Marketing Terms">
+  <option value="blog" title="A page with regular updates and articles.">Blog</option>
+  <option value="cta" title="Prompt for user action.">CTA</option>
+  <option value="evergreen" title="Timeless content.">Evergreen</option>
+  <option value="copy" title="Written content for marketing.">Copy</option>
+  <option value="engagement" title="User interaction with content.">Engagement</option>
+  <option value="storytelling" title="Narratives for engagement.">Storytelling</option>
+  <option value="whitepaper" title="Detailed report on a topic.">Whitepaper</option>
+  <option value="infographic" title="Visual data representation.">Infographic</option>
+  <option value="newsletter" title="Regular email updates.">Newsletter</option>
+  <option value="seo" title="Optimizing content for search engines.">SEO</option>
+  <option value="viral" title="Content that spreads rapidly.">Viral</option>
+  <option value="contentcalendar" title="Schedule of planned content.">Content Calendar</option>
+  <option value="conversion" title="Turning visitors into customers.">Conversion</option>
+  <option value="repurposing" title="Reusing existing content.">Repurposing</option>
+</optgroup>
+<!-- Social Media Terms -->
+<optgroup label="Social Media Terms">
+  <option value="post" title="Shared content on social media.">Post</option>
+  <option value="hashtag" title="Keyword or phrase with '#' symbol.">Hashtag</option>
+  <option value="followers" title="People who subscribe for updates.">Followers</option>
+  <option value="likes" title="Approval or appreciation for content.">Likes</option>
+  <option value="comment" title="Response or feedback on a post.">Comment</option>
+  <option value="share" title="Reposting content to followers.">Share</option>
+  <option value="story" title="Temporary post lasting 24 hours.">Story</option>
+  <option value="engagement" title="Interaction rate with content.">Engagement</option>
+  <option value="reach" title="Number of people seeing a post.">Reach</option>
+  <option value="impression" title="Number of times a post is shown.">Impression</option>
+  <option value="influencer" title="Person with purchasing influence.">Influencer</option>
+  <option value="tag" title="Mentioning someone in a post.">Tag</option>
+  <option value="viral" title="Content spreading quickly.">Viral</option>
+  <option value="contentcreator" title="Person making content for social media.">Content Creator</option>
+</optgroup>
+<!-- Email Marketing Terms -->
+<optgroup label="Email Marketing Terms">
+  <option value="cta" title="Prompt for user action.">CTA</option>
+  <option value="openrate" title="Percentage of emails opened.">Open Rate</option>
+  <option value="clickthroughrate" title="Percentage of clicks on email links.">CTR</option>
+  <option value="subjectline" title="Title or heading of an email.">Subject Line</option>
+  <option value="bouncerate" title="Percentage of undelivered emails.">Bounce Rate</option>
+  <option value="listsegmentation" title="Grouping email subscribers.">List Segmentation</option>
+  <option value="abtesting" title="Testing two email versions for better results.">A/B Testing</option>
+  <option value="personalization" title="Customizing email content for recipients.">Personalization</option>
+  <option value="unsubscribe" title="Opting out from receiving emails.">Unsubscribe</option>
+  <option value="responsivedesign" title="Emails optimized for all devices.">Responsive Design</option>
+  <option value="deliverability" title="Emails reaching recipients' inboxes.">Deliverability</option>
+  <option value="emailblast" title="Sending emails to a large group.">Email Blast</option>
+  <option value="dripcampaign" title="Automated series of emails.">Drip Campaign</option>
+  <option value="optin" title="Recipient agreeing to receive emails.">Opt-In</option>
+</optgroup>
+<!-- Analytics Terms -->
+<optgroup label="Analytics Terms">
+  <option value="kpi" title="Metrics measuring success.">KPI</option>
+  <option value="roi" title="Return on marketing spend.">ROI</option>
+  <option value="bouncerate" title="Percentage of one-page visitors.">Bounce Rate</option>
+  <option value="conversionrate" title="Percentage of visitors completing actions.">Conversion Rate</option>
+  <option value="traffic" title="Visitors to a website.">Traffic</option>
+  <option value="session" title="User visit to a website.">Session</option>
+  <option value="impression" title="Times a page is shown.">Impression</option>
+  <option value="engagement" title="User interaction with content.">Engagement</option>
+  <option value="pageview" title="Page loaded by a user.">Pageview</option>
+  <option value="user" title="Individual interacting with a site.">User</option>
+  <option value="acquisition" title="Gaining new visitors or customers.">Acquisition</option>
+  <option value="retention" title="Keeping users coming back.">Retention</option>
+  <option value="funnel" title="Customer journey stages.">Funnel</option>
+  <option value="heatmap" title="Visual display of clicks on a site.">Heatmap</option>
+  <option value="dashboard" title="Metrics and data visualization tool.">Dashboard</option>
+</optgroup>
+
+<!-- Affiliate Marketing Terms -->
+<optgroup label="Affiliate Marketing Terms">
+  <option value="affiliate" title="person promoting products for commission.">affiliate</option>
+  <option value="commission" title="payment for sale or lead.">commission</option>
+  <option value="cpa" title="cost per acquisition (sale or lead).">cpa</option>
+  <option value="cpc" title="cost per click.">cpc</option>
+  <option value="cpm" title="cost per thousand impressions.">cpm</option>
+  <option value="affiliatelink" title="unique URL for tracking sales.">affiliatelink</option>
+  <option value="conversion" title="user completing desired action.">conversion</option>
+  <option value="merchant" title="company offering products for affiliates.">merchant</option>
+  <option value="network" title="platform connecting affiliates and merchants.">network</option>
+  <option value="landingpage" title="page after clicking affiliate link.">landingpage</option>
+  <option value="ctr" title="percentage clicking affiliate link.">ctr</option>
+  <option value="tracking" title="monitoring affiliate clicks and sales.">tracking</option>
+</optgroup>
+<!-- Call to Action Terms -->
+<optgroup label="Call to Action Terms">
+  <option value="buynow" title="encourages immediate purchase.">buynow</option>
+  <option value="signup" title="prompts users to register.">signup</option>
+  <option value="learnmore" title="encourages further exploration.">learnmore</option>
+  <option value="getstarted" title="prompts users to begin service.">getstarted</option>
+  <option value="shopnow" title="encourages browsing and buying.">shopnow</option>
+  <option value="subscribe" title="prompts users to join service.">subscribe</option>
+  <option value="joinus" title="invites users to community.">joinus</option>
+  <option value="discovermore" title="encourages further exploration.">discovermore</option>
+  <option value="freetrial" title="prompts users to try free.">freetrial</option>
+  <option value="getquote" title="invites users to request pricing.">getquote</option>
+  <option value="download" title="encourages users to obtain content.">download</option>
+  <option value="booknow" title="encourages users to schedule service.">booknow</option>
+  <option value="register" title="prompts users to create account.">register</option>
+  <option value="startfree" title="encourages users to begin service free.">startfree</option>
+  <option value="watchnow" title="encourages users to view content.">watchnow</option>
+</optgroup>
+<!-- Marketing Terms -->
+<optgroup label="Marketing Terms">
+  <option value="brand" title="identity and image of business.">brand</option>
+  <option value="targetaudience" title="group of people for marketing.">targetaudience</option>
+  <option value="marketresearch" title="gathering data on customers.">marketresearch</option>
+  <option value="valueproposition" title="unique benefit of product.">valueproposition</option>
+  <option value="segmentation" title="dividing market into groups.">segmentation</option>
+  <option value="positioning" title="how product is perceived.">positioning</option>
+  <option value="advertising" title="paid communication to promote product.">advertising</option>
+  <option value="branding" title="creating a unique identity.">branding</option>
+  <option value="campaign" title="coordinated marketing activities.">campaign</option>
+  <option value="conversion" title="turning potential customers into buyers.">conversion</option>
+  <option value="customerjourney" title="path from awareness to purchase.">customerjourney</option>
+  <option value="leadgeneration" title="attracting and converting prospects.">leadgeneration</option>
+  <option value="customerretention" title="keeping existing customers.">customerretention</option>
+  <option value="viralmarketing" title="strategy to encourage content sharing.">viralmarketing</option>
+  <option value="influencermarketing" title="promoting through influential individuals.">influencermarketing</option>
+  <option value="digitalmarketing" title="marketing using digital channels.">digitalmarketing</option>
+  <option value="contentmarketing" title="distributing valuable content.">contentmarketing</option>
+</optgroup>
+<!-- SEM Terms -->
+<optgroup label="SEM Terms">
+  <option value="cpc" title="cost per click.">cpc</option>
+  <option value="ppc" title="pay-per-click advertising.">ppc</option>
+  <option value="ctr" title="click-through rate.">ctr</option>
+  <option value="serp" title="search engine results page.">serp</option>
+  <option value="qualityscore" title="Google's ad relevance rating.">qualityscore</option>
+  <option value="bid" title="amount paid per click or impression.">bid</option>
+  <option value="adrank" title="position of an ad in search results.">adrank</option>
+  <option value="impression" title="ad displayed to user.">impression</option>
+  <option value="conversion" title="user completing a desired action.">conversion</option>
+  <option value="remarketing" title="targeting previous website visitors.">remarketing</option>
+  <option value="landingpage" title="web page after clicking ad.">landingpage</option>
+  <option value="abtesting" title="testing two versions of ad.">abtesting</option>
+  <option value="negativekeyword" title="keyword preventing irrelevant ads.">negativekeyword</option>
+  <option value="conversionrate" title="percentage of visitors taking action.">conversionrate</option>
+  <option value="targeting" title="selecting audiences for ads.">targeting</option>
+</optgroup>
+
 
 
 
@@ -597,9 +776,12 @@
           <div id="keyboard-container"></div>
 
           <!-- Tip -->
+          <div class="col-md-12">
           <div class="alert alert-primary text-black" role="alert">
             <img src="./assets/brand/tip.svg" alt="Domain naming Tip"> <b>Tip:</b>  Choose a digital marketing brand name that conveys creativity, strategy, and results, while being memorable, professional, and reflective of your expertise in driving online success.
-          </div></div>
+          </div>
+        </div>
+      </div>
         <!-- Name Keyboard -->
   
       </div>
@@ -680,14 +862,42 @@
     <button id="goToTopButton" type="button" class="btn btn-secondary me-2" title="Back to Top">Back to Top
     </button>
     
-    <a href="https://www.youtube.com/@onitgo" target="_blank"  class="btn btn-secondary me-2" title="Video help">
+    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#videoHelp">
       Video help
-    </a>
+    </button>
     <button id="toggleButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noteModal"
       title="Add names"><img src="./assets/brand/add_circle_white.svg" alt="Add names"> Add names
     </button>
 </div>
-
+<!-- Video Help -->
+<div class="modal fade" id="videoHelp" tabindex="-1" aria-labelledby="videoHelpLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="videoHelpLabel">Tutorial </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; height: 500px;"> <!-- Adjust height as needed -->
+        <iframe class="embed-responsive-item" 
+        src="https://www.youtube.com/embed/XWA6OUis-Ls?rel=0&modestbranding=1&si=dFH9SmaaqJZ2ObyJ"  
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        style="flex-grow: 1; width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+      
+      <div class="modal-footer">
+        <div class="alert alert-warning text-black w-100" role="alert">
+          <span class="text-danger fw-bold">*</span>Note: We don't sell domain names; we help you create, listen to, and save them.
+          <a href="./faqs.html"> Read Faq's</a>
+        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.youtube.com/@onitgo" class="btn btn-primary" target="_blank">More Help Videos</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Help -->
 
 <!-- My names modal -->
 <div id="modalContainer"></div>

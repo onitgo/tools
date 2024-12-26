@@ -90,9 +90,13 @@
             <img src="./assets/brand/Logo.png" title="onitgo Logo" class="me-1" alt="onitgo Logo"><span
                 class="mobH">onitgo</span>
           </a>
-          <div class="navbar-text text-white fs-4">
-            <span>Domain<span class="brand-le"> name</span> generator</span>
-          </div>
+          <span class="navbar-text text-white fs-4">
+            <!-- Visible on small screens (mobile) only -->
+            <span class="d-block d-sm-none">Create <span class="brand-le">Names</span></span>
+          
+            <!-- Visible on medium and larger screens (tablet, desktop, etc.) -->
+            <span class="d-none d-sm-block">Create <span class="brand-le">Names</span> for Websites, Web & Mobile Apps</span>
+          </span>
           <div class="nav justify-content-end">
             
             <button class="navbar-toggler position-relative btn-outline-primary me-1" type="button"
@@ -175,31 +179,31 @@
             </option>
             <option value="biomass" title="Energy from organic materials and waste">Biomass Energy</option>
             <option value="nuclear" title="Energy released during nuclear reactions">Nuclear Energy</option>
-            <option value="fossil fuels" title="Energy from coal, oil, and natural gas">Fossil Fuels
+            <option value="fossilfuels" title="Energy from coal, oil, and natural gas">Fossil Fuels
             </option>
-            <option value="energy efficiency" title="Using less energy to provide the same service">Energy
+            <option value="energyefficiency" title="Using less energy to provide the same service">Energy
               Efficiency</option>
-            <option value="smart grid" title="Electric grid that uses digital technology for improved efficiency">Smart
+            <option value="smartgrid" title="Electric grid that uses digital technology for improved efficiency">Smart
               Grid
             </option>
-            <option value="energy storage" title="Technologies for storing energy for later use">Energy
+            <option value="energystorage" title="Technologies for storing energy for later use">Energy
               Storage</option>
-            <option value="carbon capture" title="Techniques to capture and store CO2 emissions">Carbon
+            <option value="carboncapture" title="Techniques to capture and store CO2 emissions">Carbon
               Capture</option>
-            <option value="electric vehicles" title="Cars and transport powered by electricity">Electric
+            <option value="electricvehicles" title="Cars and transport powered by electricity">Electric
               Vehicles</option>
-            <option value="energy policy" title="Regulations and laws governing energy use and production">
+            <option value="energypolicy" title="Regulations and laws governing energy use and production">
               Energy Policy</option>
             <option value="sustainability" title="Meeting current needs without compromising future generations">
               Sustainability
             </option>
-            <option value="energy transition" title="Shift from fossil fuels to renewable energy sources">
+            <option value="energytransition" title="Shift from fossil fuels to renewable energy sources">
               Energy Transition</option>
             <option value="hydrogen" title="Energy carrier produced from various sources, including water">
               Hydrogen Energy</option>
-            <option value="energy market" title="Marketplace for buying and selling energy">Energy Market
+            <option value="energymarket" title="Marketplace for buying and selling energy">Energy Market
             </option>
-            <option value="power generation" title="Processes of generating electricity from various energy sources">
+            <option value="powergeneration" title="Processes of generating electricity from various energy sources">
               Power Generation
             </option>
 
@@ -316,7 +320,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('fossil fuels')"
+              <a href="#" onClick="showResult('fossilfuels')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -330,7 +334,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('energy efficiency')"
+              <a href="#" onClick="showResult('energyefficiency')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -344,7 +348,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('smart grid')"
+              <a href="#" onClick="showResult('smartgrid')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -358,7 +362,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('energy storage')"
+              <a href="#" onClick="showResult('energystorage')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -372,7 +376,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('carbon capture')"
+              <a href="#" onClick="showResult('carboncapture')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -386,7 +390,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('electric vehicles')"
+              <a href="#" onClick="showResult('electricvehicles')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -400,7 +404,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('energy policy')"
+              <a href="#" onClick="showResult('energypolicy')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -428,7 +432,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('energy transition')"
+              <a href="#" onClick="showResult('energytransition')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -456,7 +460,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('energy market')"
+              <a href="#" onClick="showResult('energymarket')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -470,7 +474,7 @@
               </a>
             </li>
             <li>
-              <a href="#" onClick="showResult('power generation')"
+              <a href="#" onClick="showResult('powergeneration')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
                 data-bs-toggle="tooltip" data-bs-placement="right"
@@ -498,7 +502,7 @@
       </div>
       <div class="col-md-7 col-lg-8 mobHt0">
         <h1 class="fs-5 mb-3"> Create Unique Energy Domain Names <a href="#nextStep"
-            title="Create Unique Energy Domain Names" class="btn btn-outline-dark btn-sm" role="button">Learn More</a></h1><div class="card text-bg-light border-0">
+            title="Create Unique Energy Domain Names">View example</a></h1><div class="card text-bg-light border-0">
 
           <!-- loading spinner while DNS is being loaded -->
           <div id="loading-spinner">
@@ -592,9 +596,12 @@
           <div id="keyboard-container"></div>
 
           <!-- Tip -->
+          <div class="col-md-12">
           <div class="alert alert-primary text-black" role="alert">
             <img src="./assets/brand/tip.svg" alt="Domain naming Tip"> <b>Tip:</b> Choose an energy brand name that conveys power, sustainability, and innovation, while being memorable and reflecting your commitment to clean, efficient, or renewable energy solutions.
-          </div></div>
+          </div>
+        </div>
+      </div>
         <!-- Name Keyboard -->
 
       </div>
@@ -675,14 +682,42 @@
     <button id="goToTopButton" type="button" class="btn btn-secondary me-2" title="Back to Top">Back to Top
     </button>
     
-    <a href="https://www.youtube.com/@onitgo" target="_blank"  class="btn btn-secondary me-2" title="Video help">
+    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#videoHelp">
       Video help
-    </a>
+    </button>
     <button id="toggleButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noteModal"
       title="Add names"><img src="./assets/brand/add_circle_white.svg" alt="Add names"> Add names
     </button>
 </div>
-
+<!-- Video Help -->
+<div class="modal fade" id="videoHelp" tabindex="-1" aria-labelledby="videoHelpLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="videoHelpLabel">Tutorial </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; height: 500px;"> <!-- Adjust height as needed -->
+        <iframe class="embed-responsive-item" 
+        src="https://www.youtube.com/embed/PzO8JXYswHM?rel=0&modestbranding=1&si=74pawvd_kcBEXVqz"   
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        style="flex-grow: 1; width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+      
+      <div class="modal-footer">
+        <div class="alert alert-warning text-black w-100" role="alert">
+          <span class="text-danger fw-bold">*</span>Note: We don't sell domain names; we help you create, listen to, and save them.
+          <a href="./faqs.html"> Read Faq's</a>
+        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.youtube.com/@onitgo" class="btn btn-primary" target="_blank">More Help Videos</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Help -->
 
 <!-- My names modal -->
 <div id="modalContainer"></div>

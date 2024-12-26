@@ -90,9 +90,13 @@
             <img src="./assets/brand/Logo.png" title="onitgo Logo" class="me-1" alt="onitgo Logo"><span
                 class="mobH">onitgo</span>
           </a>
-          <div class="navbar-text text-white fs-4">
-            <span>Domain<span class="brand-le"> name</span> generator</span>
-          </div>
+          <span class="navbar-text text-white fs-4">
+            <!-- Visible on small screens (mobile) only -->
+            <span class="d-block d-sm-none">Create <span class="brand-le">Names</span></span>
+          
+            <!-- Visible on medium and larger screens (tablet, desktop, etc.) -->
+            <span class="d-none d-sm-block">Create <span class="brand-le">Names</span> for Websites, Web & Mobile Apps</span>
+          </span>
           <div class="nav justify-content-end">
             
             <button class="navbar-toggler position-relative btn-outline-primary me-1" type="button"
@@ -166,6 +170,7 @@
           <select id="eventSelect" class="form-select" aria-label="Add Event" onChange="handleSelectionChange(this)">
             <option value="" title="Select Card (None)">Select Card (None)</option>
             <!-- a 4 - - v1 -->
+            <option value="defence" title="Armed forces of a country">Defence</option>
             <option value="military" title="Armed forces of a country">Military</option>
             <option value="tactics" title="Methods used in combat">Tactics</option>
             <option value="intelligence" title="Information on threats">Intelligence</option>
@@ -208,6 +213,21 @@
 
         <div class="list-group list-group-yScroll d-none d-md-block">
           <ul class="list-group" style="text-align: left;" id="oig-mycardList">
+            <li>
+              <a href="#" onClick="showResult('defence')"
+                class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
+                data-icon-default="default" data-icon-hover="hover" data-icon-active="active" data-icon-focus="focus"
+                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Armed forces of a country"
+                aria-current="true">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h4>Defence</h4>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </a>
+            </li>
+            
             <li>
               <a href="#" onClick="showResult('military')"
                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
@@ -506,7 +526,7 @@
       </div>
       <div class="col-md-7 col-lg-8 mobHt0">
         <h1 class="fs-5 mb-3"> Create Domain Names Easily <a href="#nextStep"
-            title="Create Domain Names Easily" class="btn btn-outline-dark btn-sm" role="button">Learn More</a></h1><div class="card text-bg-light border-0">
+            title="Create Domain Names Easily">View example</a></h1><div class="card text-bg-light border-0">
 
           <!-- loading spinner while DNS is being loaded -->
           <div id="loading-spinner">
@@ -599,9 +619,12 @@
           <div id="keyboard-container"></div>
 
           <!-- Tip -->
+          <div class="col-md-12">
           <div class="alert alert-primary text-black" role="alert">
             <img src="./assets/brand/tip.svg" alt="Domain naming Tip"> <b>Tip:</b> Choose a defense brand name that conveys strength, security, and reliability, while being professional, memorable, and reflective of your expertise in protecting and safeguarding.
-          </div></div>
+          </div>
+        </div>
+      </div>
         <!-- Name Keyboard -->
   
       </div>
@@ -682,14 +705,45 @@
     <button id="goToTopButton" type="button" class="btn btn-secondary me-2" title="Back to Top">Back to Top
     </button>
     
-    <a href="https://www.youtube.com/@onitgo" target="_blank"  class="btn btn-secondary me-2" title="Video help">
+    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#videoHelp">
       Video help
-    </a>
+    </button>
     <button id="toggleButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noteModal"
       title="Add names"><img src="./assets/brand/add_circle_white.svg" alt="Add names"> Add names
     </button>
 </div>
-
+<!-- Video Help -->
+<div class="modal fade" id="videoHelp" tabindex="-1" aria-labelledby="videoHelpLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="videoHelpLabel">Tutorial </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; height: 500px;"> <!-- Adjust height as needed -->
+        <iframe class="embed-responsive-item" 
+        src="https://www.youtube.com/embed/Y-M-uvkcDM8?rel=0&modestbranding=1&si=qdnt0gn7mrl2kLgC" 
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        style="flex-grow: 1; width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+      
+      <div class="modal-footer">
+        <div class="alert alert-danger text-black w-100" role="alert">
+          <span class="text-danger fw-bold">*</span>Note: These extensions are generally restricted for use by government entities, and they are often used to represent official governmental web presences.
+        </div>
+        <div class="alert alert-warning text-black w-100" role="alert">
+          <span class="text-danger fw-bold">*</span>Note: We don't sell domain names; we help you create, listen to, and save them.
+          <a href="./faqs.html"> Read Faq's</a>
+        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.youtube.com/@onitgo" class="btn btn-primary" target="_blank">More Help Videos</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Help -->
 
 <!-- My names modal -->
 <div id="modalContainer"></div>

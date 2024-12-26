@@ -1,0 +1,5 @@
+.list-group-item.active{
+    background-color: #f6faff !important;
+    color: #222;
+}
+.display-6{    font-size: 1.5rem !important;}

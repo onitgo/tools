@@ -90,9 +90,13 @@
             <img src="./assets/brand/Logo.png" title="onitgo Logo" class="me-1" alt="onitgo Logo"><span
                 class="mobH">onitgo</span>
           </a>
-          <div class="navbar-text text-white fs-4">
-            <span>Domain<span class="brand-le"> name</span> generator</span>
-          </div>
+          <span class="navbar-text text-white fs-4">
+            <!-- Visible on small screens (mobile) only -->
+            <span class="d-block d-sm-none">Create <span class="brand-le">Names</span></span>
+          
+            <!-- Visible on medium and larger screens (tablet, desktop, etc.) -->
+            <span class="d-none d-sm-block">Create <span class="brand-le">Names</span> for Websites, Web & Mobile Apps</span>
+          </span>
           <div class="nav justify-content-end">
             
             <button class="navbar-toggler position-relative btn-outline-primary me-1" type="button"
@@ -508,7 +512,7 @@
       </div>
       <div class="col-md-7 col-lg-8 mobHt0">
         <h1 class="fs-5 mb-3"> Create Unique Education Domain Names <a href="#nextStep"
-            title="Create Unique Education Domain Names" class="btn btn-outline-dark btn-sm" role="button">Learn More</a></h1><div class="card text-bg-light border-0">
+            title="Create Unique Education Domain Names">View example</a></h1><div class="card text-bg-light border-0">
 
           <!-- loading spinner while DNS is being loaded -->
           <div id="loading-spinner">
@@ -528,24 +532,52 @@
             <label id="exampleFormControlInput1" class="form-label font-monospace fw-bold">Choose a Short Name</label>
             <select class="form-select" id="myPickOne" onChange="mypickOnefu()">
               <option value="" title="None">None</option>
-              <!--educational Prefixes  -->
-              <option value="edu" title="Related to education and learning.">Edu</option>
-              <option value="pre" title="Referring to the period before formal education, such as preschool.">Pre
-              </option>
-              <option value="post" title="Pertaining to education after a specific level, like postgraduate.">Post
-              </option>
-              <option value="higher" title="Related to advanced education beyond secondary school.">Higher
-              </option>
-              <option value="adult" title="Pertaining to education for adults or non-traditional learners.">Adult
-              </option>
-              <option value="special" title="Referring to education tailored for individuals with specific needs.">
-                Special
-              </option>
-              <option value="online" title="Related to digital or remote learning environments.">Online
-              </option>
-              <option value="vocational"
-                title="Pertaining to education that prepares individuals for specific trades or careers.">
-                Vocational</option>
+              <!-- Course Prefixes -->
+<optgroup label="Course Prefixes">
+  <option value="course" title="Referring to a learning course.">Course</option>
+  <option value="class" title="Referring to a class or lesson.">Class</option>
+  <option value="module" title="Referring to a section or unit in a course.">Module</option>
+  <option value="program" title="Referring to an educational program or curriculum.">Program</option>
+  <option value="study" title="Referring to a course of study or study material.">Study</option>
+  <option value="learn" title="Referring to the act of learning.">Learn</option>
+  <option value="cert" title="Referring to certification in a course.">Cert</option>
+  <option value="tutorial" title="Referring to instructional or tutorial content.">Tutorial</option>
+</optgroup>
+
+<!-- Quiz Prefixes -->
+<optgroup label="Quiz Prefixes">
+  <option value="quiz" title="Relating to a short test or quiz.">Quiz</option>
+  <option value="test" title="Referring to an assessment or test.">Test</option>
+  <option value="exam" title="Referring to an examination.">Exam</option>
+  <option value="challenge" title="Referring to a challenge or competitive test.">Challenge</option>
+  <option value="assessment" title="Relating to a quiz or test for evaluation.">Assessment</option>
+  <option value="survey" title="Referring to a questionnaire or survey for evaluation.">Survey</option>
+  <option value="practice" title="Referring to practice tests or exercises.">Practice</option>
+</optgroup>
+
+<!-- Academy Prefixes -->
+<optgroup label="Academy Prefixes">
+  <option value="acad" title="Relating to an academy or educational institution.">Acad</option>
+  <option value="institute" title="Relating to an institution for learning or training.">Institute</option>
+  <option value="school" title="Referring to a learning institution or school.">School</option>
+  <option value="college" title="Relating to a higher educational institution.">College</option>
+  <option value="university" title="Referring to a higher education institution.">University</option>
+  <option value="academy" title="Relating to an educational institution focused on specific training.">Academy</option>
+  <option value="training" title="Referring to an educational institution or program for training.">Training</option>
+  <option value="learning" title="Referring to an educational institution or facility for learning.">Learning</option>
+</optgroup>
+
+<!-- Additional Educational Terms -->
+<optgroup label="Additional Educational Terms">
+  <option value="education" title="Referring to general education or learning.">Education</option>
+  <option value="curriculum" title="Referring to a structured program of study.">Curriculum</option>
+  <option value="degree" title="Referring to a certification or academic degree.">Degree</option>
+  <option value="certificate" title="Referring to a certification awarded after completing a course.">Certificate</option>
+  <option value="workshop" title="Referring to hands-on training or workshop.">Workshop</option>
+  <option value="bootcamp" title="Referring to an intensive training or program.">Bootcamp</option>
+  <option value="seminar" title="Referring to a small educational gathering or seminar.">Seminar</option>
+  <option value="webinar" title="Referring to an online seminar or presentation.">Webinar</option>
+</optgroup>
 
 
 
@@ -605,9 +637,12 @@
           <div id="keyboard-container"></div>
 
           <!-- Tip -->
+          <div class="col-md-12">
           <div class="alert alert-primary text-black" role="alert">
             <img src="./assets/brand/tip.svg" alt="Domain naming Tip"> <b>Tip:</b> Choose an education brand name that conveys knowledge, growth, and empowerment, while being inspiring, memorable, and reflective of the learning experience you offer.
-          </div></div>
+          </div>
+        </div>
+      </div>
         <!-- Name Keyboard -->
 
       </div>
@@ -698,14 +733,42 @@
     <button id="goToTopButton" type="button" class="btn btn-secondary me-2" title="Back to Top">Back to Top
     </button>
     
-    <a href="https://www.youtube.com/@onitgo" target="_blank"  class="btn btn-secondary me-2" title="Video help">
+    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#videoHelp">
       Video help
-    </a>
+    </button>
     <button id="toggleButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noteModal"
       title="Add names"><img src="./assets/brand/add_circle_white.svg" alt="Add names"> Add names
     </button>
 </div>
-
+<!-- Video Help -->
+<div class="modal fade" id="videoHelp" tabindex="-1" aria-labelledby="videoHelpLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="videoHelpLabel">Tutorial </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; height: 500px;"> <!-- Adjust height as needed -->
+        <iframe class="embed-responsive-item" 
+        src="https://www.youtube.com/embed/Us861b3ORVg?rel=0&modestbranding=1&si=mRiJVEJNGYfnwrtA"    
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        style="flex-grow: 1; width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+      
+      <div class="modal-footer">
+        <div class="alert alert-warning text-black w-100" role="alert">
+          <span class="text-danger fw-bold">*</span>Note: We don't sell domain names; we help you create, listen to, and save them.
+          <a href="./faqs.html"> Read Faq's</a>
+        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.youtube.com/@onitgo" class="btn btn-primary" target="_blank">More Help Videos</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Help -->
 
 <!-- My names modal -->
 <div id="modalContainer"></div>

@@ -91,9 +91,13 @@
             <img src="./assets/brand/Logo.png" title="onitgo Logo" class="me-1" alt="onitgo Logo"><span
                 class="mobH">onitgo</span>
           </a>
-          <div class="navbar-text text-white fs-4">
-            <span>Domain<span class="brand-le"> name</span> generator</span>
-          </div>
+          <span class="navbar-text text-white fs-4">
+            <!-- Visible on small screens (mobile) only -->
+            <span class="d-block d-sm-none">Create <span class="brand-le">Names</span></span>
+          
+            <!-- Visible on medium and larger screens (tablet, desktop, etc.) -->
+            <span class="d-none d-sm-block">Create <span class="brand-le">Names</span> for Websites, Web & Mobile Apps</span>
+          </span>
           <div class="nav justify-content-end">
             
             <button class="navbar-toggler position-relative btn-outline-primary me-1" type="button"
@@ -453,7 +457,7 @@
       </div>
       <div class="col-md-7 col-lg-8 mobHt0">
         <h1 class="fs-5 mb-3"> Create Telecommunications Domain Names <a href="#nextStep"
-            title="Create Telecommunications Domain Names" class="btn btn-outline-dark btn-sm" role="button">Learn More</a></h1><div class="card text-bg-light border-0">
+            title="Create Telecommunications Domain Names">View example</a></h1><div class="card text-bg-light border-0">
 
           <!-- loading spinner while DNS is being loaded -->
           <div id="loading-spinner">
@@ -561,9 +565,12 @@
           <div id="keyboard-container"></div>
 
           <!-- Tip -->
+          <div class="col-md-12">
           <div class="alert alert-primary text-black" role="alert">
             <img src="./assets/brand/tip.svg" alt="Domain naming Tip"> <b>Tip:</b> Choose a name that conveys connectivity, innovation, and reliability, using words like "Connect," "Link," or "Network" to reflect your services.
-          </div></div>
+          </div>
+        </div>
+      </div>
         <!-- Name Keyboard -->
 
       </div>
@@ -644,9 +651,9 @@
     <button id="goToTopButton" type="button" class="btn btn-secondary me-2" title="Back to Top">Back to Top
     </button>
     
-    <a href="https://www.youtube.com/@onitgo" target="_blank"  class="btn btn-secondary me-2" title="Video help">
+    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#videoHelp">
       Video help
-    </a>
+    </button>
     <button id="toggleButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noteModal"
       title="Add names"><img src="./assets/brand/add_circle_white.svg" alt="Add names"> Add names
     </button>

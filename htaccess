@@ -1,0 +1,163 @@
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+Options -Indexes
+<IfModule mod_headers.c>
+	Header set X-Endurance-Cache-Level "2"
+	Header set X-nginx-cache "WordPress"
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^onitgo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.onitgo\.com$
+RewriteRule ^/?$ "https\:\/\/www\.onitgo\.com\/" [R=301,L]
+
+Redirect 301 /create-cool-3-letter-words.html https://www.onitgo.com/domain-name-generator/3-letter-words.html
+Redirect 301 /create-artificial-intelligence-domain-names.html https://www.onitgo.com/domain-name-generator/ai-names.html
+Redirect 301 /create-animation-domain-names-and-brand-names.html https://www.onitgo.com/domain-name-generator/animation-names.html
+Redirect 301 /create-animals-domain-names.html https://www.onitgo.com/domain-name-generator/animals-names.html
+Redirect 301 /create-accounting-domain-names.html https://www.onitgo.com/domain-name-generator/accounting-names.html
+Redirect 301 /create-advertising-names-and-domain-names.html https://www.onitgo.com/domain-name-generator/advertising-names.html
+Redirect 301 /create-agriculture-names-domains.html https://www.onitgo.com/domain-name-generator/agriculture-names.html
+Redirect 301 /create-airlines-names-domains.html https://www.onitgo.com/domain-name-generator/airlines-names.html
+Redirect 301 /create-architecture-names-domains.html https://www.onitgo.com/domain-name-generator/architecture-names.html
+Redirect 301 /create-art-domain-names-and-brand-names.html https://www.onitgo.com/domain-name-generator/art-names.html
+Redirect 301 /create-art-names-domains.html https://www.onitgo.com/domain-name-generator/art-names.html
+Redirect 301 /create-automotive-names-domains.html https://www.onitgo.com/domain-name-generator/automotive-names.html
+Redirect 301 /create-abbreviations-names-and-domain-names.html https://www.onitgo.com/domain-name-generator/acronyms-names.html
+Redirect 301 /create-banking-names-domains.html https://www.onitgo.com/domain-name-generator/banking-names.html
+Redirect 301 /create-biotechnology-names-domains.html https://www.onitgo.com/domain-name-generator/biotechnology-names.html
+Redirect 301 /create-birds-names-domains.html https://www.onitgo.com/domain-name-generator/birds-names.html
+Redirect 301 /create-boys-names.html https://www.onitgo.com/domain-name-generator/boys-names.html
+Redirect 301 /create-broadcasting-names-domains.html https://www.onitgo.com/domain-name-generator/broadcasting-names.html
+Redirect 301 /create-branding-names-domains.html https://www.onitgo.com/domain-name-generator/branding-names.html
+Redirect 301 /create-business-consulting-names-domains.html https://www.onitgo.com/domain-name-generator/business-names.html
+Redirect 301 /create-animals-cat-domain-names.html https://www.onitgo.com/domain-name-generator/cat-names.html
+Redirect 301 /create-catchy-names-domains.html https://www.onitgo.com/domain-name-generator/catchy-names.html
+Redirect 301 /create-coffee-names-domains.html https://www.onitgo.com/domain-name-generator/coffee-names.html
+Redirect 301 /create-color-domain-names-and-brand-names.html https://www.onitgo.com/domain-name-generator/color-names.html
+Redirect 301 /create-color-names-domains.html https://www.onitgo.com/domain-name-generator/color-names.html
+Redirect 301 /create-cool-3-letter-words.html https://www.onitgo.com/domain-name-generator/3-letter-words.html
+Redirect 301 /create-creative-arts-names-domains.html https://www.onitgo.com/domain-name-generator/creative-arts-names.html
+Redirect 301 /create-currency-names.html https://www.onitgo.com/domain-name-generator/currency-names.html
+Redirect 301 /create-customer-service-names-domains.html https://www.onitgo.com/domain-name-generator/customer-service-names.html
+Redirect 301 /create-cybersecurity-names-domains.html https://www.onitgo.com/domain-name-generator/cybersecurity-names.html
+Redirect 301 /create-charities-nonprofits-names-domains.html https://www.onitgo.com/domain-name-generator/charities-names.html
+Redirect 301 /create-dentistry-names-domains.html https://www.onitgo.com/domain-name-generator/dentistry-names.html
+Redirect 301 /create-design-names-domains.html https://www.onitgo.com/domain-name-generator/design-names.html
+Redirect 301 /create-defense-names-domains.html https://www.onitgo.com/domain-name-generator/defense-names.html
+Redirect 301 /create-digital-marketing-names-domains.html https://www.onitgo.com/domain-name-generator/digital-marketing-names.html
+Redirect 301 /create-animals-dog-domain-names.html https://www.onitgo.com/domain-name-generator/dog-names.html
+Redirect 301 /create-drone-domain-names-and-brand-domains.html https://www.onitgo.com/domain-name-generator/drone-names.html
+Redirect 301 /create-education-names-domains.html https://www.onitgo.com/domain-name-generator/education-names.html
+Redirect 301 /create-earth-names-domains.html https://www.onitgo.com/domain-name-generator/earth-names.html
+Redirect 301 /create-engineering-names-domains.html https://www.onitgo.com/domain-name-generator/engineering-names.html
+Redirect 301 /create-entertainment-names-domains.html https://www.onitgo.com/domain-name-generator/entertainment-names.html
+Redirect 301 /create-energy-names-domains.html https://www.onitgo.com/domain-name-generator/energy-names.html
+Redirect 301 /create-environmental-services-names-domains.html https://www.onitgo.com/domain-name-generator/environmental-names.html
+Redirect 301 /create-fantasy-names-domains.html https://www.onitgo.com/domain-name-generator/fantasy-names.html
+Redirect 301 /create-fashion-names-domains.html https://www.onitgo.com/domain-name-generator/fashion-names.html
+Redirect 301 /create-finance-names-domains.html https://www.onitgo.com/domain-name-generator/finance-names.html
+Redirect 301 /create-100-flower-names.html https://www.onitgo.com/domain-name-generator/flower-names.html
+Redirect 301 /create-food-and-beverage-names-domains.html https://www.onitgo.com/domain-name-generator/food-and-beverage-names.html
+Redirect 301 /create-fruits-names-domains.html https://www.onitgo.com/domain-name-generator/fruits-names.html
+Redirect 301 /create-free-fire-names.html https://www.onitgo.com/domain-name-generator/free-fire-names.html
+Redirect 301 /create-forestry-names-domains.html https://www.onitgo.com/domain-name-generator/forestry-names.html
+Redirect 301 /create-girl-names.html https://www.onitgo.com/domain-name-generator/girl-names.html
+Redirect 301 /create-god-names.html https://www.onitgo.com/domain-name-generator/god-names.html
+Redirect 301 /create-god-names-greek-gods-names.html https://www.onitgo.com/domain-name-generator/god-greek-gods-names.html
+Redirect 301 /create-government-names-domains.html https://www.onitgo.com/domain-name-generator/government-names.html
+Redirect 301 /create-graphic-design-names-domains.html https://www.onitgo.com/domain-name-generator/graphic-design-names.html
+Redirect 301 /create-green-energy-names-domains.html https://www.onitgo.com/domain-name-generator/green-energy-names.html
+Redirect 301 /create-healthcare-names-domains.html https://www.onitgo.com/domain-name-generator/healthcare-names.html
+Redirect 301 /create-hospitality-names-domains.html https://www.onitgo.com/domain-name-generator/hospitality-names.html
+Redirect 301 /create-human-resources-names-domains.html https://www.onitgo.com/domain-name-generator/human-resources-names.html
+Redirect 301 /create-hurricane-names-2024.html https://www.onitgo.com/domain-name-generator/hurricane-names.html
+Redirect 301 /create-oil-and-gas-industry-names-domains.html https://www.onitgo.com/domain-name-generator/industry-names.html
+Redirect 301 /create-insurance-names-domains.html https://www.onitgo.com/domain-name-generator/insurance-names.html
+Redirect 301 /create-information-technology-names-domains.html https://www.onitgo.com/domain-name-generator/information-technology-names.html
+Redirect 301 /create-interior-design-names-domains.html https://www.onitgo.com/domain-name-generator/interior-design-names.html
+Redirect 301 /create-investment-names-domains.html https://www.onitgo.com/domain-name-generator/investment-names.html
+Redirect 301 /create-journalism-names-domains.html https://www.onitgo.com/domain-name-generator/journalism-names.html
+Redirect 301 /create-jewelry-names-domains.html https://www.onitgo.com/domain-name-generator/jewelry-names.html
+Redirect 301 /create-justice-and-law-names-domains.html https://www.onitgo.com/domain-name-generator/justice-and-law-names.html
+Redirect 301 /create-kindergarten-and-early-education-names-domains.html https://www.onitgo.com/domain-name-generator/kindergarten-names.html
+Redirect 301 /create-knowledge-management-names-domains.html https://www.onitgo.com/domain-name-generator/knowledge-management-names.html
+Redirect 301 /create-law-enforcement-names-domains.html https://www.onitgo.com/domain-name-generator/law-names.html
+Redirect 301 /create-logistics-names-domains.html https://www.onitgo.com/domain-name-generator/logistics-names.html
+Redirect 301 /create-luxury-goods-names-domains.html https://www.onitgo.com/domain-name-generator/luxury-goods-names.html
+Redirect 301 /create-manufacturing-names-domains.html https://www.onitgo.com/domain-name-generator/manufacturing-names.html
+Redirect 301 /create-marketing-names-domains.html https://www.onitgo.com/domain-name-generator/marketing-names.html
+Redirect 301 /create-media-names-domains.html https://www.onitgo.com/domain-name-generator/media-names.html
+Redirect 301 /create-medical-names-domains.html https://www.onitgo.com/domain-name-generator/medical-names.html
+Redirect 301 /create-mining-names-domains.html https://www.onitgo.com/domain-name-generator/mining-names.html
+Redirect 301 /create-music-names-domains.html https://www.onitgo.com/domain-name-generator/music-names.html
+Redirect 301 /create-non-governmental-organizations-names-domains.html https://www.onitgo.com/domain-name-generator/ngo-names.html
+Redirect 301 /create-nature-domain-names-and-brand-names.html https://www.onitgo.com/domain-name-generator/nature-names.html
+Redirect 301 /create-nature-domain-names-brand-names.html https://www.onitgo.com/domain-name-generator/nature-names.html
+Redirect 301 /create-nursing-names-domains.html https://www.onitgo.com/domain-name-generator/nursing-names.html
+Redirect 301 /create-nutritional-services-names-domains.html https://www.onitgo.com/domain-name-generator/nutrition-names.html
+Redirect 301 /create-objects-names-domains.html https://www.onitgo.com/domain-name-generator/objects-names.html
+Redirect 301 /create-online-services-names-domains.html https://www.onitgo.com/domain-name-generator/online-services-names.html
+Redirect 301 /create-outsourcing-names-domains.html https://www.onitgo.com/domain-name-generator/outsourcing-names.html
+Redirect 301 /create-pharmaceuticals-names-domains.html https://www.onitgo.com/domain-name-generator/pharmaceuticals-names.html
+Redirect 301 /create-playful-names-domains.html https://www.onitgo.com/domain-name-generator/playful-names.html
+Redirect 301 /create-playstation-username-ideas.html https://www.onitgo.com/domain-name-generator/playstation-names.html
+Redirect 301 /create-publishing-names-domains.html https://www.onitgo.com/domain-name-generator/publishing-names.html
+Redirect 301 /create-public-relations-names-domains.html https://www.onitgo.com/domain-name-generator/public-relations-names.html
+Redirect 301 /create-professional-services-names-domains.html https://www.onitgo.com/domain-name-generator/professional-services-names.html
+Redirect 301 /create-quality-control-names-domains.html https://www.onitgo.com/domain-name-generator/quality-control-names.html
+Redirect 301 /create-quantitative-research-names-domains.html https://www.onitgo.com/domain-name-generator/quantitative-research-names.html
+Redirect 301 /create-real-estate-names-domains.html https://www.onitgo.com/domain-name-generator/real-estate-names.html
+Redirect 301 /create-realestate-names-domains.html https://www.onitgo.com/domain-name-generator/real-estate-names.html
+Redirect 301 /create-retail-names-domains.html https://www.onitgo.com/domain-name-generator/retail-names.html
+Redirect 301 /create-renewable-energy-names-domains.html https://www.onitgo.com/domain-name-generator/renewable-energy-names.html
+Redirect 301 /create-youth-services-names-domains.html https://www.onitgo.com/domain-name-generator/services-names.html
+Redirect 301 /create-software-development-names-domains.html https://www.onitgo.com/domain-name-generator/software-names.html
+Redirect 301 /create-social-work-names-domains.html https://www.onitgo.com/domain-name-generator/social-work-names.html
+Redirect 301 /create-solar-system-domain-names-and-brand-names.html https://www.onitgo.com/domain-name-generator/solar-system-names.html
+Redirect 301 /create-space-names-domains.html https://www.onitgo.com/domain-name-generator/space-names.html
+Redirect 301 /create-sports-names-domains.html https://www.onitgo.com/domain-name-generator/sports-names.html
+Redirect 301 /create-shipping-names-domains.html https://www.onitgo.com/domain-name-generator/shipping-names.html
+Redirect 301 /create-technology-names-domains.html https://www.onitgo.com/domain-name-generator/technology-names.html
+Redirect 301 /create-telecommunications-names-domains.html https://www.onitgo.com/domain-name-generator/telecommunications-names.html
+Redirect 301 /create-transportation-names-domains.html https://www.onitgo.com/domain-name-generator/transportation-names.html
+Redirect 301 /create-nature-tree-names.html https://www.onitgo.com/domain-name-generator/nature-tree-names.html
+Redirect 301 /create-tourism-names-domains.html https://www.onitgo.com/domain-name-generator/tourism-names.html
+Redirect 301 /create-utilities-names-domains.html https://www.onitgo.com/domain-name-generator/utilities-names.html
+Redirect 301 /create-urban-planning-names-domains.html https://www.onitgo.com/domain-name-generator/urban-names.html
+Redirect 301 /create-veterinary-services-names-domains.html https://www.onitgo.com/domain-name-generator/veterinary-names.html
+Redirect 301 /create-venture-capital-names-domains.html https://www.onitgo.com/domain-name-generator/venture-names.html
+Redirect 301 /create-waste-management-names-domains.html https://www.onitgo.com/domain-name-generator/waste-management-names.html
+Redirect 301 /create-wholesale-names-domains.html https://www.onitgo.com/domain-name-generator/wholesale-names.html
+Redirect 301 /create-writing-names-domains.html https://www.onitgo.com/domain-name-generator/writing-names.html
+Redirect 301 /create-xray-and-imaging-names-domains.html https://www.onitgo.com/domain-name-generator/xray-medical-imaging-names.html
+Redirect 301 /create-yoga-and-wellness-names-domains.html https://www.onitgo.com/domain-name-generator/yoga-names.html
+Redirect 301 /create-zoology-names-domains.html https://www.onitgo.com/domain-name-generator/zoology-names.html
+Redirect 301 /create-zoos-names-domains.html https://www.onitgo.com/domain-name-generator/zoo-names.html
+Redirect 301 /about.html https://www.onitgo.com/domain-name-generator/about.html
+Redirect 301 /privacy-policy.html https://www.onitgo.com/domain-name-generator/privacy-policy.html
+Redirect 301 /topics.html https://www.onitgo.com/domain-name-generator/topics.html
+Redirect 301 /faqs.html https://www.onitgo.com/domain-name-generator/faqs.html
+Redirect 301 /create-animals-fox-domain-names.html https://www.onitgo.com/domain-name-generator/fox-names.html
+
+

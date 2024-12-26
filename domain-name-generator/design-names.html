@@ -90,9 +90,13 @@
             <img src="./assets/brand/Logo.png" title="onitgo Logo" class="me-1" alt="onitgo Logo"><span
                 class="mobH">onitgo</span>
           </a>
-                    <div class="navbar-text text-white fs-4">
-                        <span>Domain<span class="brand-le"> name</span> generator</span>
-                      </div>
+                    <span class="navbar-text text-white fs-4">
+            <!-- Visible on small screens (mobile) only -->
+            <span class="d-block d-sm-none">Create <span class="brand-le">Names</span></span>
+          
+            <!-- Visible on medium and larger screens (tablet, desktop, etc.) -->
+            <span class="d-none d-sm-block">Create <span class="brand-le">Names</span> for Websites, Web & Mobile Apps</span>
+          </span>
                     <div class="nav justify-content-end">
                         
                         <button class="navbar-toggler position-relative btn-outline-primary me-1" type="button"
@@ -171,7 +175,7 @@
                         <!-- a 4 - - v1 -->
                         <option value="layout" title="Arrangement of visual elements">Layout</option>
                         <option value="typography" title="Arranging text visually">Typography</option>
-                        <option value="color theory" title="Study of color interactions">Color Theory</option>
+                        <option value="colortheory" title="Study of color interactions">Color Theory</option>
                         <option value="branding" title="Creating a unique brand image">Branding</option>
                         <option value="wireframe" title="Basic visual design guide">Wireframe</option>
                         <option value="prototype" title="Early model for testing concepts">Prototype</option>
@@ -237,7 +241,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" onClick="showResult('color theory')"
+                            <a href="#" onClick="showResult('colortheory')"
                                 class="list-group-item list-group-item-action list-group-item-light d-flex gap-3 py-3"
                                 data-icon-default="default" data-icon-hover="hover" data-icon-active="active"
                                 data-icon-focus="focus" data-bs-toggle="tooltip" data-bs-placement="right"
@@ -506,7 +510,7 @@
             </div>
             <div class="col-md-7 col-lg-8 mobHt0">
         <h1 class="fs-5 mb-3"> Create Unique Design Domain Names <a href="#nextStep"
-            title="Create Unique Design Domain Names" class="btn btn-outline-dark btn-sm" role="button">Learn More</a></h1><div class="card text-bg-light border-0">
+            title="Create Unique Design Domain Names">View example</a></h1><div class="card text-bg-light border-0">
 
                     <!-- loading spinner while DNS is being loaded -->
           <div id="loading-spinner">
@@ -526,28 +530,256 @@
                         <label id="exampleFormControlInput1" class="form-label font-monospace fw-bold">Choose a Short Name</label>
                         <select class="form-select" id="myPickOne" onChange="mypickOnefu()">
                             <option value="" title="None">None</option>
-                            <!--Design Prefixes  -->
-                            <option value="graphic"
-                                title="Related to visual art and design, especially in print and digital media.">Graphic
-                            </option>
-                            <option value="interior" title="Pertaining to the design of indoor spaces.">Interior
-                            </option>
-                            <option value="web" title="Related to websites and online interfaces.">Web</option>
-                            <option value="product" title="Pertaining to the design of physical items.">Product</option>
-                            <option value="fashion" title="Related to clothing and style design.">Fashion</option>
-                            <option value="industrial"
-                                title="Pertaining to the design of machinery and manufactured products.">Industrial
-                            </option>
-                            <option value="environmental"
-                                title="Related to the design of sustainable and eco-friendly spaces.">Environmental
-                            </option>
-                            <option value="user"
-                                title="Pertaining to the experience and interaction of users with products or interfaces.">
-                                User</option>
+                           <!-- Design Prefixes -->
+<option value="graphic" title="Related to visual design in print and digital media.">Graphic</option>
+<option value="interior" title="Design of indoor spaces.">Interior</option>
+<option value="web" title="Design related to websites and online interfaces.">Web</option>
+<option value="product" title="Design of physical products.">Product</option>
+<option value="fashion" title="Design related to clothing and style.">Fashion</option>
+<option value="industrial" title="Design of machinery and manufactured products.">Industrial</option>
+<option value="environmental" title="Design of sustainable, eco-friendly spaces.">Environmental</option>
+<option value="user" title="Design focused on user experience and interaction.">User</option>
+
+<!-- Layout Terms -->
+<optgroup label="Layout Terms">
+    <option value="grid" title="Framework of rows and columns to organize content.">Grid</option>
+    <option value="template" title="Pre-designed layout structure.">Template</option>
+    <option value="scheme" title="Arrangement plan of design elements.">Scheme</option>
+    <option value="structure" title="Arrangement of design elements.">Structure</option>
+    <option value="composition" title="Arrangement of visual elements in a design.">Composition</option>
+    <option value="format" title="Layout for content presentation.">Format</option>
+    <option value="style" title="Visual design and organization of layout.">Style</option>
+    <option value="blueprint" title="Detailed design plan.">Blueprint</option>
+</optgroup>
+
+<!-- Typography Terms -->
+<optgroup label="Typography Terms">
+    <option value="font" title="Set of characters in a specific style.">Font</option>
+    <option value="typeface" title="Family of fonts with consistent design.">Typeface</option>
+    <option value="kerning" title="Spacing between characters.">Kerning</option>
+    <option value="leading" title="Vertical space between text lines.">Leading</option>
+    <option value="tracking" title="Spacing of a group of characters.">Tracking</option>
+    <option value="serif" title="Font with small lines at character ends.">Serif</option>
+    <option value="sans-serif" title="Font without decorative strokes.">Sans-serif</option>
+    <option value="weight" title="Thickness of characters in a font.">Weight</option>
+    <option value="style" title="Design variant of a font.">Style</option>
+    <option value="alignment" title="Arrangement of text in a space.">Alignment</option>
+</optgroup>
+
+<!-- Color Theory Terms -->
+<optgroup label="Color Theory Terms">
+    <option value="primary" title="Basic colors: red, blue, yellow.">Primary</option>
+    <option value="secondary" title="Colors from mixing two primaries.">Secondary</option>
+    <option value="tertiary" title="Colors from mixing primary and secondary.">Tertiary</option>
+    <option value="complementary" title="Colors opposite each other on the color wheel.">Complementary</option>
+    <option value="analogous" title="Colors next to each other on the color wheel.">Analogous</option>
+    <option value="monochromatic" title="Shades and tints of one color.">Monochromatic</option>
+    <option value="saturation" title="Intensity or purity of a color.">Saturation</option>
+    <option value="hue" title="Color name (e.g., red, blue).">Hue</option>
+    <option value="value" title="Lightness or darkness of a color.">Value</option>
+    <option value="temperature" title="Warm or cool qualities of a color.">Temperature</option>
+</optgroup>
+
+<!-- Branding Terms -->
+<optgroup label="Branding Terms">
+    <option value="logo" title="Graphic symbol representing a brand.">Logo</option>
+    <option value="tagline" title="Short phrase that conveys brand message.">Tagline</option>
+    <option value="identity" title="Visual elements representing a brand.">Identity</option>
+    <option value="voice" title="Tone and style of brand communication.">Voice</option>
+    <option value="values" title="Brand's core principles.">Values</option>
+    <option value="positioning" title="Brand's market stance.">Positioning</option>
+    <option value="strategy" title="Brand development and growth plan.">Strategy</option>
+    <option value="perception" title="How the brand is viewed.">Perception</option>
+    <option value="consistency" title="Uniformity across brand platforms.">Consistency</option>
+    <option value="experience" title="Overall interaction with a brand.">Experience</option>
+</optgroup>
+
+<!-- Wireframe Terms -->
+<optgroup label="Wireframe Terms">
+    <option value="prototype" title="Preliminary version to test concepts.">Prototype</option>
+    <option value="layout" title="Arrangement of page elements.">Layout</option>
+    <option value="structure" title="Basic framework with navigation and content.">Structure</option>
+    <option value="hierarchy" title="Element prioritization based on importance.">Hierarchy</option>
+    <option value="interaction" title="User interactions with page elements.">Interaction</option>
+    <option value="content" title="Text, images, or media in the wireframe.">Content</option>
+    <option value="navigation" title="Menu and links for website/app movement.">Navigation</option>
+    <option value="call-to-action" title="Prompt for user actions (e.g., button).">Call-to-action</option>
+    <option value="annotations" title="Notes to explain wireframe functionality.">Annotations</option>
+    <option value="flow" title="User path through website or app.">Flow</option>
+</optgroup>
+
+<!-- Prototype Terms -->
+<optgroup label="Prototype Terms">
+    <option value="mockup" title="Static visual design representation.">Mockup</option>
+    <option value="interactive" title="Prototype with user interaction.">Interactive</option>
+    <option value="high-fidelity" title="Polished, close-to-final prototype.">High-fidelity</option>
+    <option value="low-fidelity" title="Simple, basic prototype for early feedback.">Low-fidelity</option>
+    <option value="clickable" title="Prototype with click-through simulation.">Clickable</option>
+    <option value="wireframe" title="Basic layout and structure prototype.">Wireframe</option>
+    <option value="user-flow" title="Diagram of user task steps.">User-flow</option>
+    <option value="iteration" title="Refinement of prototypes through testing.">Iteration</option>
+    <option value="feedback" title="Input from users or stakeholders for improvement.">Feedback</option>
+    <option value="test-case" title="Scenario to evaluate prototype performance.">Test-case</option>
+</optgroup>
+
+<!-- UX Terms -->
+<optgroup label="UX Terms">
+    <option value="usability" title="Ease of use of a product.">Usability</option>
+    <option value="user-research" title="Understanding user needs and behaviors.">User Research</option>
+    <option value="persona" title="Fictional user based on research.">Persona</option>
+    <option value="journey-map" title="Visual representation of user task steps.">Journey Map</option>
+    <option value="wireframe" title="Low-fidelity design blueprint.">Wireframe</option>
+    <option value="prototyping" title="Creating interactive versions for testing.">Prototyping</option>
+    <option value="accessibility" title="Design for users with disabilities.">Accessibility</option>
+    <option value="interaction-design" title="Designing interactive elements.">Interaction Design</option>
+    <option value="affinity-diagram" title="Tool for organizing ideas based on themes.">Affinity Diagram</option>
+    <option value="information-architecture" title="Structure and organization of content.">Information Architecture</option>
+</optgroup>
+
+<!-- UI Terms -->
+<optgroup label="UI Terms">
+    <option value="button" title="Interactive element for user actions.">Button</option>
+    <option value="icon" title="Small graphic representing an action or idea.">Icon</option>
+    <option value="layout" title="Arrangement of elements on the screen.">Layout</option>
+    <option value="typography" title="Style and appearance of text.">Typography</option>
+    <option value="color-scheme" title="Set of colors for interface.">Color Scheme</option>
+    <option value="dropdown" title="UI element for displaying options.">Dropdown</option>
+    <option value="modal" title="Pop-up window requiring user interaction.">Modal</option>
+    <option value="slider" title="Element for adjusting values.">Slider</option>
+    <option value="tooltip" title="Small pop-up providing info on hover.">Tooltip</option>
+    <option value="scrollbar" title="Element for scrolling through content.">Scrollbar</option>
+</optgroup>
+
+<!-- Vector Graphics Terms -->
+<optgroup label="Vector Graphics Terms">
+    <option value="path" title="Line or curve forming shapes.">Path</option>
+    <option value="anchor-point" title="Point that defines a path's position.">Anchor Point</option>
+    <option value="bezier-curve" title="Smooth curve defined by control points.">Bezier Curve</option>
+    <option value="stroke" title="Outline of a path or shape.">Stroke</option>
+    <option value="fill" title="Color or pattern inside a closed path.">Fill</option>
+    <option value="svg" title="Scalable vector image format.">SVG</option>
+    <option value="layer" title="Level containing graphic elements.">Layer</option>
+    <option value="group" title="Collection of elements for easier manipulation.">Group</option>
+    <option value="gradient" title="Smooth color transition between shades.">Gradient</option>
+    <option value="node" title="Point defining path segments.">Node</option>
+</optgroup>
+
+<!-- Mockup Terms -->
+<optgroup label="Mockup Terms">
+    <option value="static" title="Non-interactive design representation.">Static</option>
+    <option value="interactive" title="Clickable mockup simulating user interaction.">Interactive</option>
+    <option value="high-fidelity" title="Polished mockup resembling the final product.">High-fidelity</option>
+    <option value="low-fidelity" title="Basic mockup with minimal detail.">Low-fidelity</option>
+    <option value="visual" title="Focuses on aesthetic and design.">Visual</option>
+    <option value="responsive" title="Demonstrates adaptability across devices.">Responsive</option>
+    <option value="brand" title="Mockup incorporating brand elements.">Brand</option>
+    <option value="wireframe" title="Simple mockup focusing on structure.">Wireframe</option>
+    <option value="UI" title="Mockup representing user interface elements.">UI</option>
+    <option value="prototype" title="Interactive version for testing.">Prototype</option>
+</optgroup>
+
+<!-- Grid System Terms -->
+<optgroup label="Grid System Terms">
+    <option value="container" title="Defines the grid's width.">Container</option>
+    <option value="row" title="A horizontal group of columns.">Row</option>
+    <option value="column" title="An individual grid section.">Column</option>
+    <option value="gutter" title="Space between columns.">Gutter</option>
+    <option value="breakpoint" title="Width where the grid adjusts.">Breakpoint</option>
+    <option value="span" title="Number of columns an item spans.">Span</option>
+    <option value="fluid" title="Grid adapts based on screen size.">Fluid</option>
+    <option value="fixed" title="Grid columns have set widths.">Fixed</option>
+    <option value="offset" title="Column margin for positioning.">Offset</option>
+    <option value="align" title="Positioning of grid items.">Align</option>
+</optgroup>
+
+<!-- Responsive Design Terms -->
+<optgroup label="Responsive Design Terms">
+    <option value="media-query" title="CSS for screen size-based styles.">Media Query</option>
+    <option value="viewport" title="Visible area of a web page.">Viewport</option>
+    <option value="fluid-layout" title="Design with relative units.">Fluid Layout</option>
+    <option value="adaptive" title="Design with multiple layouts for devices.">Adaptive</option>
+    <option value="mobile-first" title="Design approach for mobile first.">Mobile-First</option>
+    <option value="breakpoint" title="Width where layout changes.">Breakpoint</option>
+    <option value="flexbox" title="CSS for flexible item alignment.">Flexbox</option>
+    <option value="grid-system" title="Layout based on rows and columns.">Grid System</option>
+    <option value="fluid-images" title="Images scale with container width.">Fluid Images</option>
+    <option value="responsive-font-size" title="Font sizes adjust to screen size.">Responsive Font Size</option>
+</optgroup>
+
+<!-- Aesthetics Terms -->
+<optgroup label="Aesthetics Terms">
+    <option value="balance" title="Even distribution of visual weight.">Balance</option>
+    <option value="contrast" title="Difference between design elements.">Contrast</option>
+    <option value="harmony" title="Pleasant arrangement of elements.">Harmony</option>
+    <option value="emphasis" title="Focus on important areas.">Emphasis</option>
+    <option value="proximity" title="Related items placed close together.">Proximity</option>
+    <option value="alignment" title="Proper arrangement of elements.">Alignment</option>
+    <option value="repetition" title="Reusing elements for unity.">Repetition</option>
+    <option value="white-space" title="Empty space for clarity.">White Space</option>
+    <option value="unity" title="All elements work together as a whole.">Unity</option>
+    <option value="movement" title="Guide the viewer's eye.">Movement</option>
+</optgroup>
+
+<!-- Iconography Terms -->
+<optgroup label="Iconography Terms">
+    <option value="symbol" title="Visual representation of an idea.">Symbol</option>
+    <option value="pictogram" title="Icon representing an object or action.">Pictogram</option>
+    <option value="glyph" title="Character or design symbol.">Glyph</option>
+    <option value="emblem" title="Graphic symbol representing a brand.">Emblem</option>
+    <option value="logo" title="Symbol to identify a brand.">Logo</option>
+    <option value="favicon" title="Small icon for website tabs.">Favicon</option>
+    <option value="flat-icon" title="Simple, 2D design style.">Flat Icon</option>
+    <option value="outline-icon" title="Icon with simple lines, no fills.">Outline Icon</option>
+    <option value="monochrome" title="Single color or shades of one color.">Monochrome</option>
+    <option value="vector-icon" title="Scalable icon in vector format.">Vector Icon</option>
+</optgroup>
+<!-- Collage Terms -->
+<optgroup label="Collage Terms">
+    <option value="cutout" title="A piece cut from a larger work.">Cutout</option>
+    <option value="paste" title="To glue materials together.">Paste</option>
+    <option value="layer" title="A single sheet of material.">Layer</option>
+    <option value="mosaic" title="A picture made from small pieces.">Mosaic</option>
+    <option value="fragment" title="A small part of something.">Fragment</option>
+    <option value="assemblage" title="Art made from various materials.">Assemblage</option>
+    <option value="texture" title="The feel or surface quality.">Texture</option>
+    <option value="montage" title="A composition of combined images.">Montage</option>
+</optgroup>
+<!-- Illustration Terms -->
+<optgroup label="Illustration Terms">
+    <option value="sketch" title="A rough drawing.">Sketch</option>
+    <option value="line" title="A mark defining shapes.">Line</option>
+    <option value="shade" title="Darkening for depth.">Shade</option>
+    <option value="hue" title="A color or shade.">Hue</option>
+    <option value="tone" title="Lightness or darkness of color.">Tone</option>
+    <option value="figure" title="A human or animal form.">Figure</option>
+    <option value="outline" title="A drawing's edge or shape.">Outline</option>
+    <option value="render" title="To detail with accuracy.">Render</option>
+</optgroup>
+<!-- Color Palette Terms -->
+<optgroup label="Color Palette Terms">
+    <option value="shade" title="A darker color (with black).">Shade</option>
+    <option value="tint" title="A lighter color (with white).">Tint</option>
+    <option value="tone" title="Color adjusted with gray.">Tone</option>
+    <option value="hue" title="The basic color.">Hue</option>
+    <option value="chroma" title="The purity of a color.">Chroma</option>
+    <option value="saturation" title="Color depth or richness.">Saturation</option>
+    <option value="gradient" title="A smooth color transition.">Gradient</option>
+    <option value="contrast" title="Difference between colors.">Contrast</option>
+</optgroup>
+<!-- Composition Terms -->
+<optgroup label="Composition Terms">
+    <option value="balance" title="Even distribution of elements.">Balance</option>
+    <option value="harmony" title="Pleasant arrangement of elements.">Harmony</option>
+    <option value="contrast" title="Differences to create interest.">Contrast</option>
+    <option value="alignment" title="Arranging elements properly.">Alignment</option>
+    <option value="proportion" title="Size relationship of elements.">Proportion</option>
+    <option value="focus" title="The main point of interest.">Focus</option>
+    <option value="rhythm" title="Pattern or repetition of elements.">Rhythm</option>
+    <option value="symmetry" title="Balanced, mirrored arrangement.">Symmetry</option>
+</optgroup>
 
 
 
-                            <!--Design Prefixes  -->
 
                         </select>
                     </div>
@@ -604,9 +836,12 @@
           <div id="keyboard-container"></div>
 
           <!-- Tip -->
+          <div class="col-md-12">
           <div class="alert alert-primary text-black" role="alert">
             <img src="./assets/brand/tip.svg" alt="Domain naming Tip"> <b>Tip:</b> Choose a design brand name that conveys creativity, innovation, and aesthetic appeal, while being unique, memorable, and reflective of the style and vision behind your work.
-          </div></div>
+          </div>
+        </div>
+    </div>
                 <!-- Name Keyboard -->
 
             </div>
@@ -687,14 +922,42 @@
     <button id="goToTopButton" type="button" class="btn btn-secondary me-2" title="Back to Top">Back to Top
     </button>
     
-    <a href="https://www.youtube.com/@onitgo" target="_blank"  class="btn btn-secondary me-2" title="Video help">
+    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#videoHelp">
       Video help
-    </a>
+    </button>
     <button id="toggleButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noteModal"
       title="Add names"><img src="./assets/brand/add_circle_white.svg" alt="Add names"> Add names
     </button>
 </div>
-
+<!-- Video Help -->
+<div class="modal fade" id="videoHelp" tabindex="-1" aria-labelledby="videoHelpLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="videoHelpLabel">Tutorial </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display: flex; flex-direction: column; height: 500px;"> <!-- Adjust height as needed -->
+          <iframe class="embed-responsive-item" 
+          src="https://www.youtube.com/embed/giviQ3k1ZjY?rel=0&modestbranding=1&si=FOo_yxmm6NDM8PH8" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          style="flex-grow: 1; width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+        
+        <div class="modal-footer">
+          <div class="alert alert-warning text-black w-100" role="alert">
+            <span class="text-danger fw-bold">*</span>Note: We don't sell domain names; we help you create, listen to, and save them.
+            <a href="./faqs.html"> Read Faq's</a>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://www.youtube.com/@onitgo" class="btn btn-primary" target="_blank">More Help Videos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Help -->
 
 <!-- My names modal -->
 <div id="modalContainer"></div>
