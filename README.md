@@ -1,6 +1,7 @@
-# Onitgo Domain Name Generator
+# onitgo (Optimizing New Ideas Through Global Opportunities.) 
+**Tool : Domain Name Generator**
 
-**Onitgo.com** is a free, easy-to-use domain name generator that helps you **create, listen to, and save domain names** for websites, web apps, and mobile apps in just a few seconds. 
+**onitgo.com** is a free, easy-to-use domain name generator that helps you **create, listen to, and save domain names** for websites, web apps, and mobile apps in just a few seconds. 
 Whether you're launching a new website, starting an online business, or simply brainstorming ideas, Onitgo is here to help you find a **catchy and memorable domain name** that connects with audiences worldwide.
 
 ## Features
