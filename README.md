@@ -40,7 +40,7 @@ To get started with Onitgo Domain Name Generator:
 3. **Save Your Choices**: Save your favorite domain names.
 4. **Register Your Domain**: Once you've chosen your domain name, proceed with registration through a domain registrar of your choice.
 
-## Note : *Note: Our generator only allows lowercase letters (a-z), numbers (0-9), and hyphens (-), with no hyphens at the beginning.
+## Note : Our generator only allows lowercase letters (a-z), numbers (0-9), and hyphens (-), with no hyphens at the beginning.
 
 **We don't sell domain names We help you create, listen to, and save domain names.**
 Thank you for using Onitgo – the tool that helps you find the perfect domain name for your next big project!
