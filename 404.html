@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Redirecting...</title>
+    <script>
+        // Mapping old URLs to new URLs for 301 redirects
+        const redirects = {
+            '/create-cool-3-letter-words.html': 'https://www.onitgo.com/domain-name-generator/3-letter-words.html',
+            '/create-artificial-intelligence-domain-names.html': 'https://www.onitgo.com/domain-name-generator/ai-names.html',
+            '/create-animation-domain-names-and-brand-names.html': 'https://www.onitgo.com/domain-name-generator/animation-names.html',
+            '/create-animals-domain-names.html': 'https://www.onitgo.com/domain-name-generator/animals-names.html',
+            '/create-accounting-domain-names.html': 'https://www.onitgo.com/domain-name-generator/accounting-names.html',
+            '/create-advertising-names-and-domain-names.html': 'https://www.onitgo.com/domain-name-generator/advertising-names.html',
+            '/create-agriculture-names-domains.html': 'https://www.onitgo.com/domain-name-generator/agriculture-names.html',
+            '/create-airlines-names-domains.html': 'https://www.onitgo.com/domain-name-generator/airlines-names.html',
+            '/create-architecture-names-domains.html': 'https://www.onitgo.com/domain-name-generator/architecture-names.html',
+            '/create-art-domain-names-and-brand-names.html': 'https://www.onitgo.com/domain-name-generator/art-names.html',
+            '/create-art-names-domains.html': 'https://www.onitgo.com/domain-name-generator/art-names.html',
+            '/create-automotive-names-domains.html': 'https://www.onitgo.com/domain-name-generator/automotive-names.html',
+            '/create-abbreviations-names-and-domain-names.html': 'https://www.onitgo.com/domain-name-generator/acronyms-names.html',
+            '/create-banking-names-domains.html': 'https://www.onitgo.com/domain-name-generator/banking-names.html',
+            '/create-biotechnology-names-domains.html': 'https://www.onitgo.com/domain-name-generator/biotechnology-names.html',
+            '/create-birds-names-domains.html': 'https://www.onitgo.com/domain-name-generator/birds-names.html',
+            '/create-boys-names.html': 'https://www.onitgo.com/domain-name-generator/boys-names.html',
+            '/create-broadcasting-names-domains.html': 'https://www.onitgo.com/domain-name-generator/broadcasting-names.html',
+            '/create-branding-names-domains.html': 'https://www.onitgo.com/domain-name-generator/branding-names.html',
+            '/create-business-consulting-names-domains.html': 'https://www.onitgo.com/domain-name-generator/business-names.html',
+            '/create-animals-cat-domain-names.html': 'https://www.onitgo.com/domain-name-generator/cat-names.html',
+            '/create-catchy-names-domains.html': 'https://www.onitgo.com/domain-name-generator/catchy-names.html',
+            '/create-coffee-names-domains.html': 'https://www.onitgo.com/domain-name-generator/coffee-names.html',
+            '/create-color-domain-names-and-brand-names.html': 'https://www.onitgo.com/domain-name-generator/color-names.html',
+            '/create-color-names-domains.html': 'https://www.onitgo.com/domain-name-generator/color-names.html',
+            '/create-cool-3-letter-words.html': 'https://www.onitgo.com/domain-name-generator/3-letter-words.html',
+            '/create-creative-arts-names-domains.html': 'https://www.onitgo.com/domain-name-generator/creative-arts-names.html',
+            '/create-currency-names.html': 'https://www.onitgo.com/domain-name-generator/currency-names.html',
+            '/create-customer-service-names-domains.html': 'https://www.onitgo.com/domain-name-generator/customer-service-names.html',
+            '/create-cybersecurity-names-domains.html': 'https://www.onitgo.com/domain-name-generator/cybersecurity-names.html',
+            '/create-charities-nonprofits-names-domains.html': 'https://www.onitgo.com/domain-name-generator/charities-names.html',
+            '/create-dentistry-names-domains.html': 'https://www.onitgo.com/domain-name-generator/dentistry-names.html',
+            '/create-design-names-domains.html': 'https://www.onitgo.com/domain-name-generator/design-names.html',
+            '/create-defense-names-domains.html': 'https://www.onitgo.com/domain-name-generator/defense-names.html',
+            '/create-digital-marketing-names-domains.html': 'https://www.onitgo.com/domain-name-generator/digital-marketing-names.html',
+            '/create-animals-dog-domain-names.html': 'https://www.onitgo.com/domain-name-generator/dog-names.html',
+            '/create-drone-domain-names-and-brand-domains.html': 'https://www.onitgo.com/domain-name-generator/drone-names.html',
+            '/create-education-names-domains.html': 'https://www.onitgo.com/domain-name-generator/education-names.html',
+            '/create-earth-names-domains.html': 'https://www.onitgo.com/domain-name-generator/earth-names.html',
+            '/create-engineering-names-domains.html': 'https://www.onitgo.com/domain-name-generator/engineering-names.html',
+            '/create-entertainment-names-domains.html': 'https://www.onitgo.com/domain-name-generator/entertainment-names.html',
+            '/create-energy-names-domains.html': 'https://www.onitgo.com/domain-name-generator/energy-names.html',
+            '/create-environmental-services-names-domains.html': 'https://www.onitgo.com/domain-name-generator/environmental-names.html',
+            '/create-fantasy-names-domains.html': 'https://www.onitgo.com/domain-name-generator/fantasy-names.html',
+            '/create-fashion-names-domains.html': 'https://www.onitgo.com/domain-name-generator/fashion-names.html',
+            '/create-finance-names-domains.html': 'https://www.onitgo.com/domain-name-generator/finance-names.html',
+            '/create-100-flower-names.html': 'https://www.onitgo.com/domain-name-generator/flower-names.html',
+            '/create-food-and-beverage-names-domains.html': 'https://www.onitgo.com/domain-name-generator/food-and-beverage-names.html',
+            '/create-fruits-names-domains.html': 'https://www.onitgo.com/domain-name-generator/fruits-names.html',
+            '/create-free-fire-names.html': 'https://www.onitgo.com/domain-name-generator/free-fire-names.html',
+            '/create-forestry-names-domains.html': 'https://www.onitgo.com/domain-name-generator/forestry-names.html',
+            '/create-girl-names.html': 'https://www.onitgo.com/domain-name-generator/girl-names.html',
+            '/create-god-names.html': 'https://www.onitgo.com/domain-name-generator/god-names.html',
+            '/create-god-names-greek-gods-names.html': 'https://www.onitgo.com/domain-name-generator/god-greek-gods-names.html',
+            '/create-government-names-domains.html': 'https://www.onitgo.com/domain-name-generator/government-names.html',
+            '/create-graphic-design-names-domains.html': 'https://www.onitgo.com/domain-name-generator/graphic-design-names.html',
+            '/create-green-energy-names-domains.html': 'https://www.onitgo.com/domain-name-generator/green-energy-names.html',
+            '/create-healthcare-names-domains.html': 'https://www.onitgo.com/domain-name-generator/healthcare-names.html',
+            '/create-hospitality-names-domains.html': 'https://www.onitgo.com/domain-name-generator/hospitality-names.html',
+            '/create-human-resources-names-domains.html': 'https://www.onitgo.com/domain-name-generator/human-resources-names.html',
+            '/create-hurricane-names-2024.html': 'https://www.onitgo.com/domain-name-generator/hurricane-names.html',
+            '/create-oil-and-gas-industry-names-domains.html': 'https://www.onitgo.com/domain-name-generator/industry-names.html',
+            '/create-insurance-names-domains.html': 'https://www.onitgo.com/domain-name-generator/insurance-names.html',
+            '/create-information-technology-names-domains.html': 'https://www.onitgo.com/domain-name-generator/information-technology-names.html',
+            '/create-interior-design-names-domains.html': 'https://www.onitgo.com/domain-name-generator/interior-design-names.html',
+            '/create-investment-names-domains.html': 'https://www.onitgo.com/domain-name-generator/investment-names.html',
+            '/create-journalism-names-domains.html': 'https://www.onitgo.com/domain-name-generator/journalism-names.html',
+            '/create-jewelry-names-domains.html': 'https://www.onitgo.com/domain-name-generator/jewelry-names.html',
+            '/create-justice-and-law-names-domains.html': 'https://www.onitgo.com/domain-name-generator/justice-and-law-names.html',
+            '/create-kindergarten-and-early-education-names-domains.html': 'https://www.onitgo.com/domain-name-generator/kindergarten-names.html',
+            '/create-knowledge-management-names-domains.html': 'https://www.onitgo.com/domain-name-generator/knowledge-management-names.html',
+            '/create-law-enforcement-names-domains.html': 'https://www.onitgo.com/domain-name-generator/law-names.html',
+            '/create-logistics-names-domains.html': 'https://www.onitgo.com/domain-name-generator/logistics-names.html',
+            '/create-luxury-goods-names-domains.html': 'https://www.onitgo.com/domain-name-generator/luxury-goods-names.html',
+            '/create-manufacturing-names-domains.html': 'https://www.onitgo.com/domain-name-generator/manufacturing-names.html',
+            '/create-marketing-names-domains.html': 'https://www.onitgo.com/domain-name-generator/marketing-names.html',
+            '/create-media-names-domains.html': 'https://www.onitgo.com/domain-name-generator/media-names.html',
+            '/create-medical-names-domains.html': 'https://www.onitgo.com/domain-name-generator/medical-names.html',
+            '/create-mining-names-domains.html': 'https://www.onitgo.com/domain-name-generator/mining-names.html',
+            '/create-music-names-domains.html': 'https://www.onitgo.com/domain-name-generator/music-names.html',
+            '/create-non-governmental-organizations-names-domains.html': 'https://www.onitgo.com/domain-name-generator/ngo-names.html',
+            '/create-nature-domain-names-and-brand-names.html': 'https://www.onitgo.com/domain-name-generator/nature-names.html',
+            '/create-nature-domain-names-brand-names.html': 'https://www.onitgo.com/domain-name-generator/nature-names.html',
+            '/create-nursing-names-domains.html': 'https://www.onitgo.com/domain-name-generator/nursing-names.html',
+            '/create-nutritional-services-names-domains.html': 'https://www.onitgo.com/domain-name-generator/nutrition-names.html',
+            '/create-objects-names-domains.html': 'https://www.onitgo.com/domain-name-generator/objects-names.html',
+            '/create-online-services-names-domains.html': 'https://www.onitgo.com/domain-name-generator/online-services-names.html',
+            '/create-outsourcing-names-domains.html': 'https://www.onitgo.com/domain-name-generator/outsourcing-names.html',
+            '/create-pharmaceuticals-names-domains.html': 'https://www.onitgo.com/domain-name-generator/pharmaceuticals-names.html',
+            '/create-playful-names-domains.html': 'https://www.onitgo.com/domain-name-generator/playful-names.html',
+            '/create-playstation-username-ideas.html': 'https://www.onitgo.com/domain-name-generator/playstation-names.html',
+            '/create-publishing-names-domains.html': 'https://www.onitgo.com/domain-name-generator/publishing-names.html',
+            '/create-public-relations-names-domains.html': 'https://www.onitgo.com/domain-name-generator/public-relations-names.html',
+            '/create-professional-services-names-domains.html': 'https://www.onitgo.com/domain-name-generator/professional-services-names.html',
+            '/create-quality-control-names-domains.html': 'https://www.onitgo.com/domain-name-generator/quality-control-names.html',
+            '/create-quantitative-research-names-domains.html': 'https://www.onitgo.com/domain-name-generator/quantitative-research-names.html',
+            '/create-real-estate-names-domains.html': 'https://www.onitgo.com/domain-name-generator/real-estate-names.html',
+            '/create-realestate-names-domains.html': 'https://www.onitgo.com/domain-name-generator/real-estate-names.html',
+            '/create-retail-names-domains.html': 'https://www.onitgo.com/domain-name-generator/retail-names.html',
+            '/create-renewable-energy-names-domains.html': 'https://www.onitgo.com/domain-name-generator/renewable-energy-names.html',
+            '/create-youth-services-names-domains.html': 'https://www.onitgo.com/domain-name-generator/services-names.html',
+            '/create-software-development-names-domains.html': 'https://www.onitgo.com/domain-name-generator/software-names.html',
+            '/create-social-work-names-domains.html': 'https://www.onitgo.com/domain-name-generator/social-work-names.html',
+            '/create-solar-system-domain-names-and-brand-names.html': 'https://www.onitgo.com/domain-name-generator/solar-system-names.html',
+            '/create-space-names-domains.html': 'https://www.onitgo.com/domain-name-generator/space-names.html',
+            '/create-security-services-names-domains.html': 'https://www.onitgo.com/domain-name-generator/security-services-names.html',
+            '/create-sports-names-domains.html': 'https://www.onitgo.com/domain-name-generator/sports-names.html',
+            '/create-startup-names-domains.html': 'https://www.onitgo.com/domain-name-generator/startup-names.html',
+            '/create-technology-names-domains.html': 'https://www.onitgo.com/domain-name-generator/technology-names.html',
+            '/create-telecommunication-names-domains.html': 'https://www.onitgo.com/domain-name-generator/telecommunication-names.html',
+            '/create-transportation-names-domains.html': 'https://www.onitgo.com/domain-name-generator/transportation-names.html',
+            '/create-utilities-names-domains.html': 'https://www.onitgo.com/domain-name-generator/utilities-names.html',
+            '/create-video-games-names-domains.html': 'https://www.onitgo.com/domain-name-generator/video-games-names.html',
+            '/create-wedding-names-domains.html': 'https://www.onitgo.com/domain-name-generator/wedding-names.html',
+            '/create-website-design-names-domains.html': 'https://www.onitgo.com/domain-name-generator/website-design-names.html',
+            '/create-wholesale-names-domains.html': 'https://www.onitgo.com/domain-name-generator/wholesale-names.html',
+            '/create-woodworking-names-domains.html': 'https://www.onitgo.com/domain-name-generator/woodworking-names.html'
+        };
+
+        // Function to check if the current URL should be redirected
+        function checkRedirect() {
+            const currentPath = window.location.pathname;
+            if (redirects[currentPath]) {
+                window.location.href = redirects[currentPath]; // Redirect to the mapped URL
+            }
+        }
+
+        window.onload = checkRedirect;
+    </script>
+</head>
+<body>
+    <h1>Page Not Found</h1>
+    <p>Sorry, but the page you're looking for has either been moved or doesn't exist. If you're looking for a specific page, please visit our <a href="https://www.onitgo.com/">homepage</a> or check the URL again.</p>
+    <p>You will be automatically redirected if your page is part of our site map.</p>
+</body>
+</html>
