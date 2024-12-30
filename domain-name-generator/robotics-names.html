@@ -152,8 +152,8 @@
         </h2>
         <div class="d-flex">
           <div class="p-2 flex-grow-1">
-            <h2 class="text-primary flex-grow-1 fs-5" title="Retail names">
-              <img src="./assets/brand/check.svg" alt="Retail names selected"> Retail names
+            <h2 class="text-primary flex-grow-1 fs-5" title="Robotics names">
+              <img src="./assets/brand/check.svg" alt="Robotics names selected"> Robotics names
             </h2>
           </div>
           <div>
@@ -402,8 +402,9 @@
 
       </div>
       <div class="col-md-7 col-lg-8 mobHt0">
-        <h1 class="fs-5 mb-3"> Create Unique Retail Domain Names <a href="#nextStep"
-            title="Create Unique Retail Domain Names">View example</a></h1><div class="card text-bg-light border-0">
+        <h1 class="fs-5 mb-3"> Create Unique Robotics Domain Names <a href="#nextStep"
+          title="Create Unique Robotics Domain Names">View example</a></h1>
+<div class="card text-bg-light border-0">
 
           <!-- loading spinner while DNS is being loaded -->
           <div id="loading-spinner">
@@ -573,7 +574,7 @@
   <div class="d-flex flex-row position-fixed bottom-0 end-0 mb-3 me-3">
     <button id="goToTopButton" type="button" class="btn btn-secondary me-2" title="Back to Top">Back to Top
     </button>
-    
+
     <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#videoHelp">
       Video help
     </button>
@@ -581,7 +582,35 @@
       title="Add names"><img src="./assets/brand/add_circle_white.svg" alt="Add names"> Add names
     </button>
 </div>
-
+<!-- Video Help -->
+<div class="modal fade" id="videoHelp" tabindex="-1" aria-labelledby="videoHelpLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="videoHelpLabel">Tutorial </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; height: 500px;"> <!-- Adjust height as needed -->
+        <iframe class="embed-responsive-item" 
+        src="https://www.youtube.com/embed/fGc6DoZxUXA?rel=0&modestbranding=1&si=xbzOQ7xLRno1IoyD"   
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        style="flex-grow: 1; width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+      
+      <div class="modal-footer">
+        <div class="alert alert-warning text-black w-100" role="alert">
+          <span class="text-danger fw-bold">*</span>Note: We don't sell domain names; we help you create, listen to, and save them.
+          <a href="./faqs.html"> Read Faq's</a>
+        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.youtube.com/@onitgo" class="btn btn-primary" target="_blank">More Help Videos</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Help -->
 
 <!-- My names modal -->
 <div id="modalContainer"></div>
