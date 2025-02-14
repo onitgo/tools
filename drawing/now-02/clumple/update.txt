@@ -1,0 +1,11 @@
+======================
+UPDATES
+======================
+* when https hides site lock also hide, when  site lock hides https also hide.(vice versa*)
+* when sidebar clipboard items copied by user it should navigate to category pages, mentioning in alert box as navigating to category page (mandate*)
+* pages must SEO- (eg:when user clicks on bounce item : "animation domain names search" title,meta,keywords,description..)
+* complete app should be in lowercasw(mandate*)
+*every word should copied to clipboard (if possible*)
+* entity search ()think*
+* Add pickone search input and words count(try for dynamic word database *)
+* Create and list your domain names for the future.

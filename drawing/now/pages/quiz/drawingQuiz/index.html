@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+  <h1>Javascript</h1>
+  <p style="text-align: right;">20/11/2019</p>
+  <hr>
+  
+  <h2>1. How to change the content </h2>
+  <p id="content">How many tigers are there in that mountain</p>
+  <button type="button" onclick='document.getElementById("content") .innerHTML="There are five tigers in that mountain"'>Answer</button>
+  <h2>2. Display date and time</h2>  
+  <p id="date">What was the date and time</p>
+  <button type="button" onclick="document.getElementById('date') .innerHTML=Date()">Answer</button>
+  <h2 id="changeAnimal">3. Change the character</h2>
+  <button type="button" onclick="document.getElementById('elephant') .src='./images/duck.gif'">Duck</button>
+  <button type="button" onclick="document.getElementById('elephant') .src='./images/elephant.gif'">Elephant</button>
+  <img id="elephant" src="./images/elephant.gif" style="width: 200px;" >
+  <h2>4.Change the font size to 20px </h2>
+  <p id="fontSize">I am smaller font.Click increase button to increase my font size </p>
+  <button type="button" onclick="document.getElementById ('fontSize') .style.fontSize='20px'">Increase font size</button>
+  <button type="button" onclick="document.getElementById ('fontSize') .style.display='none'">Hide text</button>
+<button type="button" onclick="document.getElementById ('fontSize') .style.display='block'">Show text</button>
+<h2>5.Output of 1886+1895 = ?</h2>
+<P id="Count"></P>
+<script>document.write(100+100);</script>
+</div>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: rgb(0, 0, 0);
+    background-color: #ebebeb !important;
+    text-align: left !important;
+}
+.nav-pills .nav-link{
+    text-align: left !important;
+}
+.nav-link{color: #000000;}
+.nav-link:focus, .nav-link:hover {
+    color: #2a2075 !important;
+}
+.main-title{color: #2a2075 !important;}
+.sm-img{height: 24px;}
+.clipinput{
+    display: flex;
+      justify-content: space-between;
+  }
+  .clipinput1{width: 100%;}
+  .clip-img{margin-bottom: 0px !important;width: 24px;
+    height: 24px;}
+    .btn-outline-secondary:hover {
+        color: #2a2075;
+    background-color: #ebebeb;
+    border-color: #6c757d;
+    }
+
+    /* Quick Access   */

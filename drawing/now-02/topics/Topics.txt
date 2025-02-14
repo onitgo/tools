@@ -1,0 +1,70 @@
+****All Topics*****
+
+Computers
+=============
+What is a Computer
+Operating System
+
+Hardware
+==============
+What is Hardware
+Basic Parts
+Buttons and Ports
+Inside Computer
+Laptop Computers
+Mobile Devices
+
+software
+============
+What is a Software
+System Software
+Application Software
+Utility Software
+
+Internet
+=================
+What is Internet
+What is the Web
+How Internet Works
+Features Of Internet
+Search Engines
+Email
+Social Networking
+Chat and Messaging
+Online Media
+Connecting to Internet
+Internet Service Types
+Choosing ISP's
+What is Cloud
+
+
+Web Applications
+===============
+What is Web App
+How it works?
+Advantages
+Disadvantages
+Web App Examples
+
+Mobile Apps
+==================
+What is Mobile App
+Types Of Mobile
+Types Of  Mobile Apps
+Mobile App Examples
+
+Online Tools
+==================
+What are Online Tools
+Free Online Tools
+
+iOT
+=======================
+What is iOT
+Artificial Intelligence
+What is Artificial Intelligence
+
+
+
+
+

@@ -1,0 +1,1 @@
+document.getElementById('Count') .innerHTML=1886+1895;

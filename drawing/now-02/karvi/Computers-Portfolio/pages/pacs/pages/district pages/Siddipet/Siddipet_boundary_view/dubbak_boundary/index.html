@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>DCCB</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <!-- Font Awesome CDN -->
+  <script src="https://use.fontawesome.com/2c99dbb4d2.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <link href="./../../../../../styles.css" rel="stylesheet">
+  <!-- <link href="./../css/style.css" rel="stylesheet"> -->
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* The popup bubble styling. */
+.popup-bubble {
+  /* Position the bubble centred-above its parent. */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -100%);
+  /* Style the bubble. */
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  overflow-y: auto;
+  max-height: 60px;
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+}
+/* The parent of the bubble. A zero-height div at the top of the tip. */
+.popup-bubble-anchor {
+  /* Position the div a fixed distance above the tip. */
+  position: absolute;
+  width: 100%;
+  bottom: /* TIP_HEIGHT= */ 8px;
+  left: 0;
+}
+/* This element draws the tip. */
+.popup-bubble-anchor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Center the tip horizontally. */
+  transform: translate(-50%, 0);
+  /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+  width: 0;
+  height: 0;
+  /* The tip is 8px high, and 12px wide. */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: /* TIP_HEIGHT= */ 8px solid white;
+}
+/* JavaScript will position this div at the bottom of the popup tip. */
+.popup-container {
+  cursor: auto;
+  height: 0;
+  position: absolute;
+  /* The max width of the info window. */
+  width: 200px;
+}
+      
+
+
+
+          .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+ </head>
+
+<body class="d-flex flex-column h-100">
+<!-- Fixed navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md  navbar-dark fixed-top">
+      <img src="./../../../../../images/intellect-logo.jpg" class="float-left" alt="...">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-bar collapse navbar-collapse" id="navbarCollapse">
+          <a href="./../../../../../index.html"><i class="fa fa-home fa-lg"></i></a> 
+          <a href="#"><input type="text"></a> <i class="fa fa-search fa-lg"></i>
+        </div>
+    </nav>
+  </header>
+
+  <br><br><br>
+  <!-- Page content -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left side content -->
+      <div class="col-sm-2 col-md-2 col-lg-2">
+        <a href="./../../index.html" class="bac-btn"><div class="pointer"><span>Back</span></div></a>
+        <!-- <a href="#" class="Mp-title"><h5>Siddipet district </h5></a> -->
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 point">
+   
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15162.90377304276!2d78.66540333915772!3d18.176534444415818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bccf5fad5a74c07%3A0x4c7239385e053087!2sDubbak%2C+Telangana+502108!5e0!3m2!1sen!2sin!4v1563441318597!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="map"></div>
+        <div id="content">
+          Siddipet
+        </div>
+        <!-- Replace the value of the key parameter with your own API key. -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+        </script>
+    </div>
+        
+    
+       <!-- right side table -->
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <h6>Dubbak mandal</h6>
+          <div class="tab-bord" id="showData">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sl No</th>
+              <th>village name</th>
+              <th>No of PACS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Dubbak</td>
+              <td>PACS Dubbak</td>
+            
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Kondamrajpally</td>
+              <td>PACS Kondamrajpally</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ankenapally</td>
+              <td>PACS Ankenapally</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Gatlamallial</td>
+              <td>PACS Gatlamallial</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <span><p>© 2019 Intellect Informatics Pvt, Ltd. All Rights Reserved</p></span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+<script>
+    function CreateTableFromJSON() {
+      var myBooks = [
+        {
+          "Sl No": "1",
+          "Village name": "Dubbak",
+          "No of PACS": "PACS Dubbak",
+  
+        },
+        {
+          "Sl No": "2",
+          "Village name": "",
+          "No of PACS": "",
+  
+        },
+        {
+          "Sl No": "3",
+          "Village name": "",
+          "No of PACS": "",
+  
+        }
+      ]
+  
+      // EXTRACT VALUE FOR HTML HEADER. 
+      // ('Book ID', 'Book Name', 'Category' and 'Price')
+      var col = [];
+      for (var i = 0; i < myBooks.length; i++) {
+        for (var key in myBooks[i]) {
+          if (col.indexOf(key) === -1) {
+            col.push(key);
+          }
+        }
+      }
+  
+      // CREATE DYNAMIC TABLE.
+      var table = document.createElement("table");
+  
+      // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+  
+      var tr = table.insertRow(-1);                   // TABLE ROW.
+  
+      for (var i = 0; i < col.length; i++) {
+        var th = document.createElement("th");      // TABLE HEADER.
+        th.innerHTML = col[i];
+        tr.appendChild(th);
+      }
+  
+      // ADD JSON DATA TO THE TABLE AS ROWS.
+      for (var i = 0; i < myBooks.length; i++) {
+  
+        tr = table.insertRow(-1);
+  
+        for (var j = 0; j < col.length; j++) {
+          var tabCell = tr.insertCell(-1);
+          tabCell.innerHTML = myBooks[i][col[j]];
+        }
+      }
+  
+      // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+      var divContainer = document.getElementById("showData");
+      divContainer.innerHTML = "";
+      divContainer.appendChild(table);
+    }
+    function CreateTableFromJSONs() {
+      var myBooks = [
+        {
+  
+          "Sl No": "1",
+          "Village name": "	Kondamrajpally",
+          "No of PACS": "PACS Kondamrajpally",
+  
+        },
+        {
+          "Sl No": "2",
+          "Village name": "",
+          "No of PACS": "",
+  
+        },
+        {
+          "Sl No": "3",
+          "Village name": "",
+          "No of PACS": "",
+  
+        }
+      ]
+  
+      // EXTRACT VALUE FOR HTML HEADER. 
+      // ('Book ID', 'Book Name', 'Category' and 'Price')
+      var col = [];
+      for (var i = 0; i < myBooks.length; i++) {
+        for (var key in myBooks[i]) {
+          if (col.indexOf(key) === -1) {
+            col.push(key);
+          }
+        }
+      }
+  
+      // CREATE DYNAMIC TABLE.
+      var table = document.createElement("table");
+  
+      // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+  
+      var tr = table.insertRow(-1);                   // TABLE ROW.
+  
+      for (var i = 0; i < col.length; i++) {
+        var th = document.createElement("th");      // TABLE HEADER.
+        th.innerHTML = col[i];
+        tr.appendChild(th);
+      }
+  
+      // ADD JSON DATA TO THE TABLE AS ROWS.
+      for (var i = 0; i < myBooks.length; i++) {
+  
+        tr = table.insertRow(-1);
+  
+        for (var j = 0; j < col.length; j++) {
+          var tabCell = tr.insertCell(-1);
+          tabCell.innerHTML = myBooks[i][col[j]];
+        }
+      }
+  
+      // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+      var divContainer = document.getElementById("showData");
+      divContainer.innerHTML = "";
+      divContainer.appendChild(table);
+    }
+    function CreateTableFromJSONsp() {
+      var myBooks = [
+        {
+          "Sl No": "1",
+          "Village name": "Ankenapally",
+          "No of PACS": "PACS Ankenapally",
+  
+        },
+        {
+          "Sl No": "2",
+          "Village name": "",
+          "No of PACS": "",
+  
+        },
+        {
+          "Sl No": "3",
+          "Village name": "",
+          "No of PACS": "",
+  
+        }
+      ]
+  
+      // EXTRACT VALUE FOR HTML HEADER. 
+      // ('Book ID', 'Book Name', 'Category' and 'Price')
+      var col = [];
+      for (var i = 0; i < myBooks.length; i++) {
+        for (var key in myBooks[i]) {
+          if (col.indexOf(key) === -1) {
+            col.push(key);
+          }
+        }
+      }
+  
+      // CREATE DYNAMIC TABLE.
+      var table = document.createElement("table");
+  
+      // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+  
+      var tr = table.insertRow(-1);                   // TABLE ROW.
+  
+      for (var i = 0; i < col.length; i++) {
+        var th = document.createElement("th");      // TABLE HEADER.
+        th.innerHTML = col[i];
+        tr.appendChild(th);
+      }
+  
+      // ADD JSON DATA TO THE TABLE AS ROWS.
+      for (var i = 0; i < myBooks.length; i++) {
+  
+        tr = table.insertRow(-1);
+  
+        for (var j = 0; j < col.length; j++) {
+          var tabCell = tr.insertCell(-1);
+          tabCell.innerHTML = myBooks[i][col[j]];
+        }
+      }
+  
+      // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+      var divContainer = document.getElementById("showData");
+      divContainer.innerHTML = "";
+      divContainer.appendChild(table);
+    }
+    function CreateTableFromJSONsg() {
+      var myBooks = [
+        {
+          "Sl No": "1",
+          "Village name": "Gatlamallial",
+          "No of PACS": "PACS Gatlamallial",
+  
+        },
+        {
+          "Sl No": "2",
+          "Village name": "",
+          "No of PACS": "",
+  
+        },
+        {
+          "Sl No": "3",
+          "Village name": "",
+          "No of PACS": "",
+  
+        }
+      ]
+  
+      // EXTRACT VALUE FOR HTML HEADER. 
+      // ('Book ID', 'Book Name', 'Category' and 'Price')
+      var col = [];
+      for (var i = 0; i < myBooks.length; i++) {
+        for (var key in myBooks[i]) {
+          if (col.indexOf(key) === -1) {
+            col.push(key);
+          }
+        }
+      }
+  
+      // CREATE DYNAMIC TABLE.
+      var table = document.createElement("table");
+  
+      // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+  
+      var tr = table.insertRow(-1);                   // TABLE ROW.
+  
+      for (var i = 0; i < col.length; i++) {
+        var th = document.createElement("th");      // TABLE HEADER.
+        th.innerHTML = col[i];
+        tr.appendChild(th);
+      }
+  
+      // ADD JSON DATA TO THE TABLE AS ROWS.
+      for (var i = 0; i < myBooks.length; i++) {
+  
+        tr = table.insertRow(-1);
+  
+        for (var j = 0; j < col.length; j++) {
+          var tabCell = tr.insertCell(-1);
+          tabCell.innerHTML = myBooks[i][col[j]];
+        }
+      }
+  
+      // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+      var divContainer = document.getElementById("showData");
+      divContainer.innerHTML = "";
+      divContainer.appendChild(table);
+    }
+  </script>
+  <script>var map, popup, Popup;
+
+      /** Initializes the map and the custom popup. */
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -33.9, lng: 151.1},
+          zoom: 10,
+        });
+      
+        Popup = createPopupClass();
+        popup = new Popup(
+            new google.maps.LatLng(-33.866, 151.196),
+            document.getElementById('content'));
+        popup.setMap(map);
+      }
+      
+      /**
+       * Returns the Popup class.
+       *
+       * Unfortunately, the Popup class can only be defined after
+       * google.maps.OverlayView is defined, when the Maps API is loaded.
+       * This function should be called by initMap.
+       */
+      function createPopupClass() {
+        /**
+         * A customized popup on the map.
+         * @param {!google.maps.LatLng} position
+         * @param {!Element} content The bubble div.
+         * @constructor
+         * @extends {google.maps.OverlayView}
+         */
+        function Popup(position, content) {
+          this.position = position;
+      
+          content.classList.add('popup-bubble');
+      
+          // This zero-height div is positioned at the bottom of the bubble.
+          var bubbleAnchor = document.createElement('div');
+          bubbleAnchor.classList.add('popup-bubble-anchor');
+          bubbleAnchor.appendChild(content);
+      
+          // This zero-height div is positioned at the bottom of the tip.
+          this.containerDiv = document.createElement('div');
+          this.containerDiv.classList.add('popup-container');
+          this.containerDiv.appendChild(bubbleAnchor);
+      
+          // Optionally stop clicks, etc., from bubbling up to the map.
+          google.maps.OverlayView.preventMapHitsAndGesturesFrom(this.containerDiv);
+        }
+        // ES5 magic to extend google.maps.OverlayView.
+        Popup.prototype = Object.create(google.maps.OverlayView.prototype);
+      
+        /** Called when the popup is added to the map. */
+        Popup.prototype.onAdd = function() {
+          this.getPanes().floatPane.appendChild(this.containerDiv);
+        };
+      
+        /** Called when the popup is removed from the map. */
+        Popup.prototype.onRemove = function() {
+          if (this.containerDiv.parentElement) {
+            this.containerDiv.parentElement.removeChild(this.containerDiv);
+          }
+        };
+      
+        /** Called each frame when the popup needs to draw itself. */
+        Popup.prototype.draw = function() {
+          var divPosition = this.getProjection().fromLatLngToDivPixel(this.position);
+      
+          // Hide the popup when it is far out of view.
+          var display =
+              Math.abs(divPosition.x) < 4000 && Math.abs(divPosition.y) < 4000 ?
+              'block' :
+              'none';
+      
+          if (display === 'block') {
+            this.containerDiv.style.left = divPosition.x + 'px';
+            this.containerDiv.style.top = divPosition.y + 'px';
+          }
+          if (this.containerDiv.style.display !== display) {
+            this.containerDiv.style.display = display;
+          }
+        };
+      
+        return Popup;
+      }</script>
+</html>

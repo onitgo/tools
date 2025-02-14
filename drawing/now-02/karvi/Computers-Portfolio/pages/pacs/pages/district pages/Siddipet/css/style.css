@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+
+::-moz-selection { background: rgba(0,0,0,0.2); }
+::selection { background: rgba(0,0,0,0.2); }
+
+/**** Skip to line 36 for the hover code ****/
+
+.point span{
+  padding: 0 0.4em;
+  cursor: help;
+  font-style: normal;
+  position: relative;
+  
+}
+.point span::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px; left: 0;
+  opacity: 0;
+  width: 115px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+  border-radius: 3px;
+}
+.point span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 20px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0,0,0,0.8);
+  transition: opacity 250ms, top 250ms;
+}
+.point span:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+.point span:hover::after,
+.point span:hover::before {opacity: 1;}
+.point span:hover::after {top: 30px;}
+.point span:hover::before {top: 20px;}
+.fa-map-marker{cursor: pointer;color:#464142 !important;padding: 0px;margin: 0px;}
+
+/* dynemic table stles */
+th, td, p, input {
+  font:14px Verdana;
+}
+table, th, td 
+{
+   border: solid 1px #DDD;
+   border-collapse: collapse;
+   padding: 2px 3px;
+ 
+}
+th {
+   font-weight:bold;
+}
+.one,.two{float: left;}
+th:nth-child(1) {
+  width: 60px;
+}
+
+th {
+  width: 250px;
+  font-size: 14px;
+  font-family: initial;
+  background-color: rgb(110, 119, 119);
+  color: white;
+  text-align: left;
+  border: 1px solid #e3e3e3;
+}
+
+table th {
+  padding: 4px;
+  font-size: 14px;
+  font-family: initial;
+}
+
+table td {
+  padding: .1em;
+  font-size: 12px;
+  font-family: initial;
+  height: 27px;
+  padding: 1px 4px;
+  border: 1px solid #e3e3e3;
+}
